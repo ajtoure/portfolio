@@ -235,6 +235,7 @@ html {
   overflow: hidden;
 }
 
+/* Fonts & Colours*/
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -242,18 +243,14 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #FDF8F5;
+  font-family: "Poppins", sans-serif;
+  background-color: #F6EFEE;
 }
 
 header, section {
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-size: 72px;
 }
 
 h1, h2, h3 {
@@ -282,12 +279,15 @@ aside {
       align-content: space-between;
 }
 
-aside h3 {
-  padding: 0 0 50% 0;
+aside p {
+  margin: 0;
+  padding: 30px 20px 35% 0;
+  font-family: "EB Garamond", serif;
+  width: 50%;
 }
 
 aside .fas {
-  font-size: 40px;
+  font-size: 60px;
   padding-top: 90%;
 }
 
@@ -307,13 +307,22 @@ nav {
   width: 100%;
 }
 
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 h1 {
   padding-top: 50%;
-  margin: 0;
+  margin-bottom: 30px;
+  font-size: 100px;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: #F6EFEE;
 }
 
 ul {
-  margin: 0;
+  margin: 20px 0;
   padding: 20px 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -336,12 +345,6 @@ li a {
   color: black;
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .mainImg {
   width: 50%;
   height: 300px;
@@ -352,22 +355,181 @@ nav ul {
   height: auto;
 }
 
-.projectOne {
-  background-color: #CFBFB0;
+.content h3 {
+  padding: 40px 0;
 }
 
-.projectTwo {
+.direct {
+  width: 100%;
+  height: 50px;
+}
+
+.content {
+  text-decoration: none;
+  color: black;
+}
+
+.content .direct a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+
+.projectOne {
   background-color: #DAC2C3;
 }
 
-.projectThree {
-  background-color: #C7D5D0;
+.projectTwo {
+  background-color: #FBFC9C;
 }
 
-/*
-ochre: #CC936D 
-#FAF2EE
-*/
+.projectTwo .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projectTwo .part1 p {
+  font-size: "EB Garamond", serif;
+}
+
+.projectTwo .part {
+  width: 50%;
+  height: 50%;
+}
+
+.projectTwo .projectImg {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectTwo .projectImg .img {
+  width: 50%;
+}
+
+.projectTwo .projectImg .img img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.projectTwo .projectImg .img1 {
+  padding: 100px 20px 20px 0;
+  margin: 0;
+  height: 40%;
+}
+
+.projectTwo .projectImg .img2 {
+  padding: 50px 50px 80px 50px;
+}
+
+.projectThree {
+  background-color: #D6E7F9;
+}
+
+/*$green: #CCE8CC;*/
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutContent {
+  width: 60%;
+  margin: 0;
+  padding: 40px;
+}
+
 .contact {
-  background-color: #CBD4F2;
+  background-color: #CCE8CC;
+  width: 40%;
+  margin: 0;
+  height: 60%;
+  color: white;
+  padding: 10px;
+}
+
+.contact h3 {
+  padding: 20px 0;
+}
+
+.contact h4 {
+  padding: 20px 40px;
+}
+
+.contact .socialIcons {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.contact .socialIcons a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact p {
+  padding: 20px;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.contact form input {
+  background-color: #CCE8CC;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px white solid;
+  border-left: 8px white solid;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 10px;
+}
+
+.contact form .name, .contact form .subject {
+  width: 50%;
+}
+
+.contact form .email, .contact form .message {
+  width: 100%;
+}
+
+.contact form button {
+  background: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  color: #A37F89;
+  padding: 20px;
+  margin: 40px;
+}
+
+/*$darkPurple: #A37F89;*/
+footer {
+  background-color: #A37F89;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+footer p {
+  color: white;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-weight: 500;
+  text-align: center;
 }

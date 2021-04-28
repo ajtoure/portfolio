@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=EB+Garamond&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/eebb423b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>AJ Toure Portfolio</title>
 </head>
 
@@ -17,9 +20,6 @@
     <header id="header">
         <div class="wrapper headerWrap">
             <aside>
-                <h3>
-                    portfolio & resume
-                </h3>
                 <p>"There's a magic in using tech to hold a mirror up to our natural world"</p>
                 <!-- Logo or image goes here at bottom -->
                 <i class="fas fa-star-of-life"></i>
@@ -55,8 +55,8 @@
     <!-- Main Section -->
     <main id="projects">
 
-        <section class="projectOne" id="projectOne">
-            <div class="wrapper">
+        <section class="project projectOne" id="projectOne">
+            <div class="wrapper content">
                 <h3>project name</h3>
                 <div class="mainImg">
                     <img src="./assets/airheadapp.png" alt="">
@@ -69,30 +69,49 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit excepturi distinctio autem!
                     Impedit in repellendus aspernatur quaerat possimus nemo repellat nam, alias aut, assumenda ullam
                     cupiditate provident, odit reiciendis.</p>
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
+
+                    <div class="direct direct1">
+                        <a href="#projectOne"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#projectThree"><i class="fas fa-chevron-right"></i></a>
+                    </div>
             </div>
         </section>
 
-        <section class="projectTwo" id="projectTwo">
-            <div class="wrapper">
-                <h3>project name</h3>
-                <div class="mainImg">
-                    <img src="./assets/whatdoyouno.png" alt="">
+        <section class="project projectTwo" id="projectTwo">
+            <div class="wrapper content">
+                <div class="part part1">
+                    <h3>what do you know</h3>
+                    <p>an educational game app</p>
+                </div>
+                
+                <div class="part part2">
+                    <p>For this project we were assigned an application in a simulated agency setting. It presents the user with a definition and two homophones. The user selects the word that corresponds with the definition.
+                    </p>
+                </div>
+                
+                <!-- secondary paragraph explain how it was achieved -->
+                <p></p>
+                <div class="projectImg">
+                    <div class="img img1">
+                        <img src="./assets/whatdoyouno.png" alt="">
+                    </div>
+                    <div class="img img2">
+                        <img src="./assets/whatdoyouno2.png" alt="">
+                    </div>
                 </div>
 
                 <!--Initial paragraph describing what the app does-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat amet labore quam magnam id.
-                </p>
-                <!-- secondary paragraph explain how it was achieved -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit excepturi distinctio autem!
-                    Impedit in repellendus aspernatur quaerat possimus nemo repellat nam, alias aut, assumenda ullam
-                    cupiditate provident, odit reiciendis.</p>
+                
+                <div class="direct direct2">
+                    <a href="#projectOne"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#projectThree"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                
             </div>
         </section>
 
-        <section class="projectThree" id="projectThree">
-            <div class="wrapper">
+        <section class="project projectThree" id="projectThree">
+            <div class="wrapper content">
                 <h3>project name</h3>
                 <div class="mainImg">
                     <img src="./assets/pollittogether.png" alt="">
@@ -104,12 +123,17 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit excepturi distinctio autem!
                     Impedit in repellendus aspernatur quaerat possimus nemo repellat nam, alias aut, assumenda ullam
                     cupiditate provident, odit reiciendis.</p>
+
+                <div class="direct direct3">
+                    <a href="#projectOne"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#projectThree"><i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>
         </section>
     </main>
     <!-- About -->
     <section id="about">
-        <div class="wrapper">
+        <div class="wrapper aboutContent">
             <img src="" alt="">
             <div>
                 <h2>hi, i'm aj!</h2>
@@ -128,38 +152,43 @@
             </div>
             <!-- Resume Link -->
         </div>
-    </section>
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="wrapper">
-            <div>
-                <a href="https://www.linkedin.com/in/aj-touré-6159191b2">
-                   <i class="fab fa-linkedin-in"></i> 
-                </a>
-                
-                <a href="https://twitter.com/ajdigital_">
-                   <i class="fab fa-twitter"></i> 
-                </a>
-                
-                <a href="https://github.com/ajtoure"><i class="fab fa-github-alt"></i></a>
+
+        <!-- Contact -->
+            <div class="wrapper contact">
+                <div class="socialIcons">
+                    <h3>come find me at:</h3>
+                    <a href="https://www.linkedin.com/in/aj-touré-6159191b2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://twitter.com/ajdigital_">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://github.com/ajtoure"><i class="fab fa-github-alt"></i></a>
+                </div>
+                <h4>or send me a message!</h4>
+                <form action="send">
+                    <label for="name" aria-hidden="true" class="sr-only">name</label>
+                    <input class="name" type="text" name="name" placeholder="name">
+                    
+                    <label for="subject" aria-hidden="true" class="sr-only">subject</label>
+                    <input class="subject" type="text" placeholder="subject">
+
+                    <label for="email" aria-hidden="true" class="sr-only">email</label>
+                    <input class="email" type="email" placeholder="email">
+
+                    <label for="message" aria-hidden="true" class="sr-only">message</label>
+                    <input class="message" type="text" placeholder="message">
+
+                    <button type="submit">send</button>
+                </form>
+
             </div>
-            <form action="">
-                <label for="name" aria-hidden="true">name</label>
-                <input type="text" name="name"><input type="text">
-
-                <label for="email" aria-hidden="true">email</label>
-                <input type="email">
-
-                <label for="message" aria-hidden="true">message</label>
-                <input type="text">
-            </form>
-        </div>
     </section>
     <!-- Footer -->
-    <footer>
-        <i class="fas fa-chevron-left"></i>
-        <i class="fas fa-chevron-right"></i>
-        &copy aj toure 2021
+    <footer class="footer">
+        <p>copyright &copy aj toure 2021</p>
     </footer>
     <!-- Extraneous Notes -->
 </body>

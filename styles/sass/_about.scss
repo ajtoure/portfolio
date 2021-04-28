@@ -1,0 +1,65 @@
+/*$green: #CCE8CC;*/
+
+.about {
+    display: flex;
+}
+
+.aboutContent {
+    width: 60%;
+    margin: 0;
+    padding: 40px;
+}
+.contact {
+    background-color: $green;
+    width: 40%;
+    margin: 0;
+    height: 60%;
+    color: white;
+    padding: 10px;
+    h3 {
+        padding: 20px 0;
+    }
+    h4 {
+        padding: 20px 40px;
+    }
+    .socialIcons {
+        font-size: 20px;
+        padding: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    p {
+        padding: 20px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        input {
+        background-color: $green;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px white solid;
+        border-left: 8px white solid;
+        font-family: $sansSerif;
+        padding: 5px 10px;
+        }
+        .name, .subject {
+            width: 50%;
+        }
+        .email, .message {
+            width: 100%;
+        }
+        button {
+            background: white;
+            font-family: $sansSerif;
+            border: none;
+            color: $darkPurple;
+            padding: 20px;
+            margin: 40px;
+        }
+    }
+    
+}

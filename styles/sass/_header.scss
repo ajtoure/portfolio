@@ -8,16 +8,18 @@ aside {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-}
-
-aside h3 {
-    padding: 0 0 50% 0;
-}
-
-aside .fas {
-    font-size: 40px;
+    p {
+        margin: 0;
+        padding: 30px 20px 35% 0;
+        font-family: $lightSerif;
+        width: 50%;
+    }
+    .fas {
+    font-size: 60px;
     padding-top: 90%;
+    }
 }
+
 
 .navSection {
     height: 100%;
@@ -31,15 +33,21 @@ aside .fas {
 
 nav {
     width: 100%;
+    ul {
+        display: flex;
+    }
 }
 
 h1 {
     padding-top: 50%;
-    margin: 0;
+    margin-bottom: 30px;
+    font-size: 100px;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: $mainNeutral;
 }
 
 ul {
-    margin: 0;
+    margin: 20px 0;
     padding: 20px 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -51,14 +59,11 @@ ul {
 li {
     list-style-type: none;
     padding-right: 20px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
-li a {
-    text-decoration: none;
-    color: black;
-}
 
-nav ul {
-    display: flex;
-}
 
