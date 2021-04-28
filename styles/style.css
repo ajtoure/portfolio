@@ -263,6 +263,7 @@ h1, h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 5px;
 }
 
 aside {
@@ -375,6 +376,10 @@ li a {
   font-size: 40px;
 }
 
+.project {
+  padding: 5px;
+}
+
 .projectOne {
   background-color: #DAC2C3;
 }
@@ -438,23 +443,24 @@ li a {
 }
 
 /*$green: #CCE8CC;*/
-.about {
+.aboutSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .aboutContent {
-  width: 60%;
+  width: 50%;
   margin: 0;
   padding: 40px;
+  height: 100vh;
 }
 
 .contact {
   background-color: #CCE8CC;
-  width: 40%;
+  width: 50%;
   margin: 0;
-  height: 60%;
+  height: 100vh;
   color: white;
   padding: 10px;
 }
@@ -520,10 +526,11 @@ li a {
 /*$darkPurple: #A37F89;*/
 footer {
   background-color: #A37F89;
-  height: 100px;
+  height: 60%;
   width: 100%;
   margin: 0;
   padding: 10px;
+  float: bottom;
 }
 
 footer p {
