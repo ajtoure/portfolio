@@ -454,6 +454,52 @@ li a {
   margin: 0;
   padding: 40px;
   height: 100vh;
+  color: #724647;
+}
+
+.aboutContent .portrait {
+  width: 40%;
+  height: auto;
+  float: left;
+}
+
+.aboutContent .portrait img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.aboutContent .textWrap h2 {
+  padding: 20px 20px 20px 40px;
+  width: 60%;
+  float: right;
+  font-size: 1.5em;
+}
+
+.aboutContent .textWrap p {
+  padding: 20px 40px;
+  width: 60%;
+  float: right;
+}
+
+.aboutContent .skillIcons {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.aboutContent .skillIcons i {
+  font-size: 2rem;
+  color: #724647;
+  margin-right: 20px;
+  padding: 10px;
 }
 
 .contact {
@@ -461,26 +507,32 @@ li a {
   width: 50%;
   margin: 0;
   height: 100vh;
-  color: white;
+  color: #696880;
   padding: 10px;
 }
 
 .contact h3 {
   padding: 20px 0;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 .contact h4 {
   padding: 20px 40px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .contact .socialIcons {
   font-size: 20px;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .contact .socialIcons a {
   text-decoration: none;
   color: white;
+  padding-right: 20px;
 }
 
 .contact p {
@@ -493,7 +545,7 @@ li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 20px 40px;
 }
 
 .contact form input {
@@ -504,10 +556,12 @@ li a {
   border-left: 8px white solid;
   font-family: "Poppins", sans-serif;
   padding: 5px 10px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .contact form .name, .contact form .subject {
-  width: 50%;
+  width: calc(50% - 20px);
 }
 
 .contact form .email, .contact form .message {
@@ -520,7 +574,6 @@ li a {
   border: none;
   color: #A37F89;
   padding: 20px;
-  margin: 40px;
 }
 
 /*$darkPurple: #A37F89;*/

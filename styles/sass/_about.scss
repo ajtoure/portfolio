@@ -9,26 +9,70 @@
     margin: 0;
     padding: 40px;
     height: 100vh;
+    color: $darkRed;
+    .portrait {
+        width: 40%;
+        height: auto;
+        float: left;
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+    }
+    .textWrap {
+        h2 {
+        padding: 20px 20px 20px 40px;
+        width: 60%;
+        float: right;
+        font-size: 1.5em;
+        }
+        p {
+        padding: 20px 40px;
+        width: 60%;
+        float: right;
+        }
+    }
+    .skillIcons {
+        padding: 10px;
+        margin: 0 auto;
+        display: block;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        i {
+            font-size: 2rem;
+            color: $darkRed;
+            margin-right: 20px;
+            padding: 10px;
+        }
+    }
 }
 .contact {
     background-color: $green;
     width: 50%;
     margin: 0;
     height: 100vh;
-    color: white;
+    color: $grey;
     padding: 10px;
     h3 {
         padding: 20px 0;
+        font-weight: 400;
+        font-size: 1.5em;
     }
     h4 {
         padding: 20px 40px;
+        font-family: $heavySerif;
+        font-size: 1.5em;
+        margin: 0;
     }
     .socialIcons {
         font-size: 20px;
-        padding: 20px;
+        padding: 20px 40px;
         a {
             text-decoration: none;
             color: white;
+            padding-right: 20px;
         }
     }
     p {
@@ -37,7 +81,7 @@
     form {
         display: flex;
         flex-wrap: wrap;
-        padding: 40px 0;
+        padding: 20px 40px;
         input {
         background-color: $green;
         border-top: none;
@@ -46,9 +90,11 @@
         border-left: 8px white solid;
         font-family: $sansSerif;
         padding: 5px 10px;
+        margin-right: 20px;
+        margin-bottom: 40px;
         }
         .name, .subject {
-            width: 50%;
+            width: calc(50% - 20px);
         }
         .email, .message {
             width: 100%;
@@ -59,7 +105,6 @@
             border: none;
             color: $darkPurple;
             padding: 20px;
-            margin: 40px;
         }
     }
     
