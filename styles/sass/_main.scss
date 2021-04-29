@@ -1,14 +1,9 @@
 .mainImg {
     width: 50%;
-    height: 300px;
     img {
         width: 100%;
         height: auto;
     }
-}
-
-.content h3 {
-        padding: 40px 0;
 }
 
 .direct {
@@ -16,30 +11,81 @@
     height: 50px;
 }
 
+.toolList {
+    font-family: $heavySerif;
+    font-size: 1.5rem;
+}
+
 .content {
     text-decoration: none;
-    color: black;
+    display: flex;
     .direct a {
         text-decoration: none;
-        color: black;
         font-size: 40px;
+    }
+    h2 {
+        padding: 40px 0 20px 0;
     }
 }
 
 .project {
-    padding: 5px;
+    padding: 1px;
 }
 
 .projectOne {
     background-color: $secondNeutral;
+    color: $darkRed;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    .direct1 {
+        size: 1rem;
+        color: $darkRed;
+        padding: 5px;
+        a {
+            width: 10%;
+        }
+        svg.iconify{
+            height: 2em;
+            color: $darkPurple;
+        }
+    }
+    .projectSection {
+        width: 50%;
+        height: 90vh;
+        .projSectOne {
+            display: flex;
+            flex-direction: column;
+            p {
+                width: 80%;
+                margin: 40px auto;
+            }
+        }
+        .projSectTwo {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .mainImg, .secondImg {
+            width: 80%;
+            margin: 20px auto;
+            img {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
 }
 
 
 .projectTwo {
     background-color: $yellow;
+    
     .content {
         display: flex;
         flex-wrap: wrap;
+        color: $darkPurple;
     }
     .part1 p {
         font-size: $lightSerif;
