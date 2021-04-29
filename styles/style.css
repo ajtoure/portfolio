@@ -259,6 +259,11 @@ h1, h2, h3 {
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .headerWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,45 +378,47 @@ li a {
   color: black;
 }
 
-.mainImg {
-  width: 50%;
-}
-
-.mainImg img {
-  width: 100%;
-  height: auto;
+.projects {
+  padding: 1px;
 }
 
 .direct {
   width: 100%;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .toolList {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5rem;
+  width: 80%;
 }
 
 .content {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .content .direct a {
   text-decoration: none;
   font-size: 40px;
+  padding: 1px;
 }
 
 .content h2 {
-  padding: 40px 0 20px 0;
+  padding: 40px 0;
+  font-size: 2rem;
 }
 
 .project {
   padding: 1px;
 }
 
+/* Project #1 - Styles */
 .projectOne {
   background-color: #DAC2C3;
   color: #724647;
@@ -421,6 +428,21 @@ li a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100vh;
+  padding: 1px;
+}
+
+.projectOne .content {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+}
+
+.projectOne .content h2 {
+  width: 100%;
+  padding-top: 0;
 }
 
 .projectOne .direct1 {
@@ -438,12 +460,7 @@ li a {
   color: #A37F89;
 }
 
-.projectOne .projectSection {
-  width: 50%;
-  height: 90vh;
-}
-
-.projectOne .projectSection .projSectOne {
+.projectOne .projSectOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,26 +468,35 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1px;
 }
 
-.projectOne .projectSection .projSectOne p {
+.projectOne .projSectOne p.description {
   width: 80%;
-  margin: 40px auto;
+  padding: 40px 0;
 }
 
-.projectOne .projectSection .projSectTwo {
+.projectOne .projSectTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1px;
 }
 
-.projectOne .projectSection .mainImg, .projectOne .projectSection .secondImg {
+.projectOne .projSectTwo p.description {
   width: 80%;
-  margin: 20px auto;
+  padding: 1px;
+  padding-top: 25%;
+}
+
+.projectOne .projectSection {
+  width: 50%;
+  height: 90vh;
+  padding: 40px;
 }
 
 .projectOne .projectSection .mainImg img, .projectOne .projectSection .secondImg img {
@@ -480,11 +506,31 @@ li a {
   width: 100%;
 }
 
+.projectOne .projectSection .mainImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.projectOne .projectSection .secondImg {
+  width: 80%;
+  height: auto;
+  padding-top: 0px;
+}
+
+/* Project #2 - Styles */
 .projectTwo {
   background-color: #FBFC9C;
+  padding: 1px;
+}
+
+.projectTwo h2 {
+  padding-left: 40px;
 }
 
 .projectTwo .content {
+  padding: 40px;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,50 +539,102 @@ li a {
   color: #A37F89;
 }
 
+.projectTwo .part {
+  padding: 1px;
+}
+
 .projectTwo .part1 p {
+  padding: 1px;
   font-size: "EB Garamond", serif;
 }
 
-.projectTwo .part {
+.projectTwo .partOneContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.projectTwo .partOneContent p {
   width: 50%;
-  height: 50%;
+  padding: 40px;
+  margin: 0 auto;
 }
 
 .projectTwo .projectImg {
-  width: 100%;
-  height: 50%;
+  width: calc(100% - 80px);
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1px;
+  margin: 0 auto;
 }
 
 .projectTwo .projectImg .img {
-  width: 50%;
+  width: 45%;
 }
 
 .projectTwo .projectImg .img img {
   width: 100%;
   height: auto;
   display: inline-block;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
-.projectTwo .projectImg .img1 {
-  padding: 100px 20px 20px 0;
-  margin: 0;
-  height: 40%;
-}
-
-.projectTwo .projectImg .img2 {
-  padding: 50px 50px 80px 50px;
-}
-
+/* Project #3 - Styles */
 .projectThree {
+  padding: 1px;
   background-color: #D6E7F9;
+  color: #696880;
+}
+
+.projectThree .contentWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projectThree .toolList {
+  padding: 40px 0;
+}
+
+.projectThree h2 {
+  width: 100%;
+  padding: 40px;
+}
+
+.projectThree .content {
+  height: 90vh;
+  padding: 1px;
+}
+
+.projectThree .projectSection {
+  width: 50%;
+  padding: 40px;
+  height: 90vh;
+}
+
+.projectThree .projectSection .mainImg {
+  width: 100%;
+}
+
+.projectThree .projectSection .mainImg img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
 /*$green: #CCE8CC;*/
@@ -689,4 +787,117 @@ footer p {
   padding: 40px 20px;
   font-weight: 500;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* General */
+  .section {
+    height: auto;
+  }
+  /* Header */
+  .headerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerNav h1 {
+    font-size: 3rem;
+  }
+  /* Main */
+  .projectOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 0;
+    height: auto;
+  }
+  .projectOne h2 {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .projectOne .projectSection {
+    padding: 1px 40px;
+    width: 100%;
+    height: 80vh;
+  }
+  .projectOne .projectSection p.description {
+    padding: 20px 0;
+  }
+  .projectOne .projSectTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectOne .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  /* Project Two */
+  .projectTwo {
+    height: auto;
+  }
+  .projectTwo h2 {
+    padding: 20px 0;
+  }
+  .projectTwo .content {
+    height: auto;
+    padding: 20px;
+  }
+  .projectTwo .partOneContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectTwo .partOneContent p {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .projectTwo .projectImg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    padding: 20px;
+  }
+  .projectTwo .projectImg .img {
+    width: 75%;
+    height: auto;
+    position: relative;
+  }
+  .projectTwo .projectImg .img1 {
+    bottom: -40px;
+    left: -20px;
+    z-index: 1;
+  }
+  .projectTwo .projectImg .img2 {
+    width: 100%;
+    right: -20px;
+  }
+  /* Project Three*/
+  .projectThree .content {
+    height: auto;
+  }
+  .projectThree .contentWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectThree .projectSection {
+    width: 100%;
+    height: auto;
+  }
+  /**/
+  /**/
 }
