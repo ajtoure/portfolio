@@ -5,13 +5,44 @@
         height: auto;
     }
     /* Header */
+    header {
+        aside {
+            width: 100%;
+            height: auto;
+            
+            .fas {
+                padding: 40px 0;
+            }
+        }
+        .headerQuote p {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+    }
     .headerNav {
         flex-direction: column;
-        h1 {
-            font-size: 3rem;
+        
+    }
+    .headerWrap {
+        flex-direction: column-reverse;
+        padding: 0 20px;
+        .navSection {
+            width: 100%;
         }
     }
-
+    .headerSplash {
+        h1 {
+            width: 100%;
+            font-size: 4rem;
+        }
+        h2 {
+            width: 100%;
+        }
+        a {
+                position: static;
+            }
+    }
     /* Main */
     .projectOne {
         flex-direction: column;
@@ -83,8 +114,14 @@
 
     /* Project Three*/
     .projectThree {
+        h2 {
+            padding: 20px;
+        }
         .content {
             height: auto;
+        }
+        .toolList {
+            padding: 20px 0 1px 0;
         }
         .contentWrap {
             flex-direction: column;
@@ -92,10 +129,11 @@
         .projectSection {
             width: 100%;
             height: auto;
+            padding: 20px;
         }
     }
 
 
-    /**/
+    /* About */
     /**/
 }

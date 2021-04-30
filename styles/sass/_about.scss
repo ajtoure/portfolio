@@ -49,26 +49,49 @@
     }
 }
 .contact {
+    display: flex;
     background-color: $green;
     width: 50%;
     margin: 0;
     height: 100vh;
     color: $grey;
     padding: 10px;
+    position: relative;
+    right: -360px;
+    .openContact {
+        align-self: center;
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        width: 60px;
+        transform: scaleX(-1);
+        padding: 10px;
+        margin: 0 auto;
+        height: 100vh;
+        i {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        color: white;
+        font-size: 40px;
+        }
+    }
+    
     h3 {
         padding: 20px 0;
         font-weight: 400;
         font-size: 1.5em;
     }
     h4 {
-        padding: 20px 40px;
+        padding: 20px 20px 20px 10px;
         font-family: $heavySerif;
         font-size: 1.5em;
         margin: 0;
     }
     .socialIcons {
         font-size: 20px;
-        padding: 20px 40px;
+        padding: 20px 20px 20px 10px;
         a {
             text-decoration: none;
             color: white;
@@ -76,12 +99,12 @@
         }
     }
     p {
-        padding: 20px;
+        padding: 20px 20px 20px 10px;
     }
     form {
         display: flex;
         flex-wrap: wrap;
-        padding: 20px 40px;
+        padding: 20px 20px 20px 10px;
         input {
         background-color: $green;
         border-top: none;
@@ -99,7 +122,7 @@
         .email, .message {
             width: 100%;
         }
-        button {
+        .contactSubmit {
             background: white;
             font-family: $sansSerif;
             border: none;

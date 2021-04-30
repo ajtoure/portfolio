@@ -345,6 +345,7 @@ aside .fas {
 }
 
 nav {
+  padding: 1px;
   width: 100%;
 }
 
@@ -384,7 +385,7 @@ li a {
 
 .direct {
   width: 100%;
-  height: 50px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,9 +441,25 @@ li a {
   height: 90vh;
 }
 
+.projectOne .content .toolList {
+  padding: 40px 0 10px 0;
+  font-size: 1rem;
+}
+
 .projectOne .content h2 {
   width: 100%;
-  padding-top: 0;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #724647;
+  border-bottom: 1px solid #724647;
+}
+
+.projectOne .direct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projectOne .direct1 {
@@ -490,7 +507,7 @@ li a {
 .projectOne .projSectTwo p.description {
   width: 80%;
   padding: 1px;
-  padding-top: 25%;
+  padding: 100px 0 0 0;
 }
 
 .projectOne .projectSection {
@@ -698,12 +715,41 @@ li a {
 }
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #CCE8CC;
   width: 50%;
   margin: 0;
   height: 100vh;
   color: #696880;
   padding: 10px;
+  position: relative;
+  right: -360px;
+}
+
+.contact .openContact {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  width: 60px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  padding: 10px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.contact .openContact i {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 40px;
 }
 
 .contact h3 {
@@ -713,7 +759,7 @@ li a {
 }
 
 .contact h4 {
-  padding: 20px 40px;
+  padding: 20px 20px 20px 10px;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5em;
   margin: 0;
@@ -721,7 +767,7 @@ li a {
 
 .contact .socialIcons {
   font-size: 20px;
-  padding: 20px 40px;
+  padding: 20px 20px 20px 10px;
 }
 
 .contact .socialIcons a {
@@ -731,7 +777,7 @@ li a {
 }
 
 .contact p {
-  padding: 20px;
+  padding: 20px 20px 20px 10px;
 }
 
 .contact form {
@@ -740,7 +786,7 @@ li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 40px;
+  padding: 20px 20px 20px 10px;
 }
 
 .contact form input {
@@ -763,7 +809,7 @@ li a {
   width: 100%;
 }
 
-.contact form button {
+.contact form .contactSubmit {
   background: white;
   font-family: "Poppins", sans-serif;
   border: none;
@@ -795,14 +841,42 @@ footer p {
     height: auto;
   }
   /* Header */
+  header aside {
+    width: 100%;
+    height: auto;
+  }
+  header aside .fas {
+    padding: 40px 0;
+  }
+  header .headerQuote p {
+    width: 100%;
+    padding: 40px 0;
+  }
   .headerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .headerNav h1 {
-    font-size: 3rem;
+  .headerWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+  .headerWrap .navSection {
+    width: 100%;
+  }
+  .headerSplash h1 {
+    width: 100%;
+    font-size: 4rem;
+  }
+  .headerSplash h2 {
+    width: 100%;
+  }
+  .headerSplash a {
+    position: static;
   }
   /* Main */
   .projectOne {
@@ -885,8 +959,14 @@ footer p {
     right: -20px;
   }
   /* Project Three*/
+  .projectThree h2 {
+    padding: 20px;
+  }
   .projectThree .content {
     height: auto;
+  }
+  .projectThree .toolList {
+    padding: 20px 0 1px 0;
   }
   .projectThree .contentWrap {
     -webkit-box-orient: vertical;
@@ -897,7 +977,8 @@ footer p {
   .projectThree .projectSection {
     width: 100%;
     height: auto;
+    padding: 20px;
   }
-  /**/
+  /* About */
   /**/
 }

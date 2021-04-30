@@ -20,7 +20,7 @@
     <!-- Header & Navigation -->
     <header id="header">
         <div class="wrapper headerWrap">
-            <aside>
+            <aside class="headerQuote">
                 <p>"There's a magic in using tech to hold a mirror up to our natural world"</p>
                 <!-- Logo or image goes here at bottom -->
                 <i class="fas fa-star-of-life"></i>
@@ -182,34 +182,42 @@
 
         <!-- Contact -->
         <div class="wrapper contact">
-            <div class="socialIcons">
-                <h3>come find me at:</h3>
-                <a href="https://www.linkedin.com/in/aj-touré-6159191b2">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+            <button class="openContact">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div>
+                <div class="socialIcons">
+                    <h3>come find me at:</h3>
+                    <a href="https://www.linkedin.com/in/aj-touré-6159191b2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
 
-                <a href="https://twitter.com/ajdigital_">
-                    <i class="fab fa-twitter"></i>
-                </a>
+                    <a href="https://twitter.com/ajdigital_">
+                        <i class="fab fa-twitter"></i>
+                    </a>
 
-                <a href="https://github.com/ajtoure"><i class="fab fa-github-alt"></i></a>
+                    <a href="https://github.com/ajtoure"><i class="fab fa-github-alt"></i></a>
+                </div>
+                <h4>or, send me a message!</h4>
+                <form action="send">
+                    <label for="name" aria-hidden="true" class="sr-only">name</label>
+                    <input class="name" type="text" name="name" placeholder="name">
+
+                    <label for="subject" aria-hidden="true" class="sr-only">subject</label>
+                    <input class="subject" type="text" placeholder="subject">
+
+                    <label for="email" aria-hidden="true" class="sr-only">email</label>
+                    <input class="email" type="email" placeholder="email">
+
+                    <label for="message" aria-hidden="true" class="sr-only">message</label>
+                    <input class="message" type="text" placeholder="message">
+
+                    <button class="contactSubmit" type="submit">send</button>
+                </form>
+
             </div>
-            <h4>or, send me a message!</h4>
-            <form action="send">
-                <label for="name" aria-hidden="true" class="sr-only">name</label>
-                <input class="name" type="text" name="name" placeholder="name">
 
-                <label for="subject" aria-hidden="true" class="sr-only">subject</label>
-                <input class="subject" type="text" placeholder="subject">
-
-                <label for="email" aria-hidden="true" class="sr-only">email</label>
-                <input class="email" type="email" placeholder="email">
-
-                <label for="message" aria-hidden="true" class="sr-only">message</label>
-                <input class="message" type="text" placeholder="message">
-
-                <button type="submit">send</button>
-            </form>
 
         </div>
     </section>
