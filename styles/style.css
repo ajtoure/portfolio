@@ -574,7 +574,7 @@ li a:hover {
 
 .projectOne .projSectOne p.description {
   width: 100%;
-  padding: 60px 0 40px 20px;
+  padding: 20px 0 20px 20px;
 }
 
 .projectOne .projSectTwo {
@@ -591,7 +591,7 @@ li a:hover {
 .projectOne .projSectTwo .description {
   width: 100%;
   padding: 1px;
-  padding: 60px 0 50px 0;
+  padding: 30px 0 20px 0;
 }
 
 .projectOne .projectSection {
@@ -629,6 +629,15 @@ li a:hover {
   height: auto;
   margin-top: 60px;
   padding: 1px;
+  width: 80%;
+}
+
+.projectOne .projectSection .sectionTwoText {
+  padding-top: 20px;
+}
+
+.projectOne .projectSection .projectLink {
+  padding: 20px 0;
 }
 
 /* Project #2 - Styles */
@@ -680,7 +689,7 @@ li a:hover {
 
 .projectTwo .partOneContent p {
   width: 50%;
-  padding: 40px;
+  padding: 20px;
   margin: 0;
 }
 
@@ -757,6 +766,10 @@ li a:hover {
   margin: 0px;
 }
 
+.projectTwo .projectSection .sectionTwoText {
+  padding-top: 20px;
+}
+
 /* Project #3 - Styles */
 .projectThree {
   padding: 1px;
@@ -823,6 +836,7 @@ li a:hover {
 }
 
 .projectThree .direct3 .toFinal {
+  width: 40px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }

@@ -109,7 +109,7 @@
             padding: 1px;
             p.description {
                 width: 100%;
-                padding: 60px 0 40px 20px;
+                padding: 20px 0 20px 20px;
             }
         }
     .projSectTwo {
@@ -119,7 +119,7 @@
             .description {
                 width: 100%;
                 padding: 1px;
-                padding: 60px 0 50px 0;
+                padding: 30px 0 20px 0;
             }
         }
 
@@ -152,6 +152,13 @@
             height: auto;
             margin-top: 60px;
             padding:  1px;
+            width: 80%;
+        }
+        .sectionTwoText {
+            padding-top: 20px;
+        }
+        .projectLink {
+            padding: 20px 0;
         }
     }
 }
@@ -193,7 +200,7 @@
         width: 100%;
         p {
             width: 50%;
-            padding: 40px;
+            padding: 20px;
             margin: 0;
         }
         .description {
@@ -250,6 +257,12 @@
             }
         }
     }
+
+    .projectSection {
+        .sectionTwoText {
+            padding-top:20px;
+        }
+    }
 }
 
 /* Project #3 - Styles */
@@ -301,6 +314,7 @@
     .direct3 {
         display: flex;
         .toFinal {
+            width: 40px;
             align-self: flex-end;
         }
     }
