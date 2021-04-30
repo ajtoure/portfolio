@@ -1044,6 +1044,10 @@ footer p {
   padding: 20px;
 }
 
+.contact form .contactSubmit:hover {
+  background: #FBFC9C;
+}
+
 @media (max-width: 480px) {
   /* General */
   .section {
