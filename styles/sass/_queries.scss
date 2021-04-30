@@ -11,28 +11,22 @@
         width: 100%;
     } 
     /* Header */
-    header {
-        aside {
-            width: 100%;
-            height: auto;
-            
-            .fas {
-                font-size: 2rem;
-                padding: 20px 0;
-            }
-        }
-        
 
-    }
     .headerQuote {
-            p {
+            .headQuote {
                 width: 100%;
+                padding: 20px 0 10px 0;
             }
             .startTrigger {
                 background: none;
                 border: none;
-                height: auto;
+                height: 50px;
                 width: 60px;
+                padding: 0;
+                .fas {
+                    font-size: 2rem;
+                    padding: 20px 0;
+                }
                 &:hover {
                     .fas {
                         display: none;
@@ -130,6 +124,7 @@
             }
             .contentBox {
                 padding: 40px 0;
+                flex-direction: column;
             }
             .projectLink {
                 padding: 40px;
@@ -234,9 +229,19 @@
         }
     }
     .contact {
-        position: static;
-        width: 100%;
-        padding: 10px 40px;
+            position: static;
+            width: 100%;
+            padding: 10px 40px;
+            div {
+                .h3, 
+            .socialIcons {
+                padding: 0 40px;
+                .h4 {
+                    width: 100%;
+                    padding: 40px 60px;
+                }
+            }
+        }
     }
 
     .openContact {

@@ -14,6 +14,7 @@
         padding: 30px 20px 35% 0;
         font-family: $lightSerif;
         width: 50%;
+        font-size: 1.5rem;
     }
     .startTrigger {
         background: none;
@@ -21,6 +22,9 @@
         height: auto;
         width: 60px;
         padding: 60% 0 100px 0;
+        &:focus {
+            transform: translate(2px, 5px);
+        }
     }
     .fas {
     font-size: 60px;
@@ -51,8 +55,6 @@ nav {
         display: flex;
     }
 }
-
-
 
 ul {
     margin: 40px 0;

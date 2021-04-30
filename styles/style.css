@@ -251,6 +251,7 @@ header, section {
   height: 100vh;
   margin: 0;
   padding: 0;
+  scroll-snap-align: start;
 }
 
 h1, h2, h3 {
@@ -266,6 +267,11 @@ h2, h3 {
 p {
   margin: 0;
   padding: 0;
+}
+
+button:focus {
+  -webkit-transform: translate(0px, 5px);
+          transform: translate(0px, 5px);
 }
 
 .headerWrap {
@@ -294,6 +300,7 @@ p {
   padding: 30px 20px 35% 0;
   font-family: "EB Garamond", serif;
   width: 50%;
+  font-size: 1.5rem;
 }
 
 .headerQuote .startTrigger {
@@ -302,6 +309,11 @@ p {
   height: auto;
   width: 60px;
   padding: 60% 0 100px 0;
+}
+
+.headerQuote .startTrigger:focus {
+  -webkit-transform: translate(2px, 5px);
+          transform: translate(2px, 5px);
 }
 
 .headerQuote .fas {
@@ -623,10 +635,11 @@ li a:hover {
 .projectTwo {
   background-color: #FBFC9C;
   padding: 1px;
+  height: 100vh;
 }
 
 .projectTwo h2 {
-  padding: 40px;
+  padding: 20px 40px;
   border-top: 1px solid #A37F89;
   border-bottom: 1px solid #A37F89;
 }
@@ -640,6 +653,7 @@ li a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #A37F89;
+  width: 100%;
 }
 
 .projectTwo .part {
@@ -675,8 +689,46 @@ li a:hover {
   margin: 0;
 }
 
+.projectTwo .partOneContent .toolList {
+  padding: 60px 40px 40px 40px;
+}
+
+.projectTwo .partOneContent .contentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectTwo .direct2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projectTwo .direct2:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.projectTwo .direct2 .nextProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectTwo .direct2 .nextProject img {
+  padding-left: 90%;
+}
+
 .projectTwo .projectLink {
-  padding: 0 40px;
+  padding: 40px;
+  width: 50%;
+  border-left: 2px solid #A37F89;
+  margin-left: 100px;
+}
+
+.projectTwo .projectLink p {
+  width: 100%;
+  padding: 40px 0;
 }
 
 .projectTwo .projectImg {
@@ -695,6 +747,7 @@ li a:hover {
 .projectTwo .projectImg .img {
   width: 45%;
   padding: 1px;
+  height: auto;
 }
 
 .projectTwo .projectImg .img img {
@@ -709,6 +762,7 @@ li a:hover {
   padding: 1px;
   background-color: #D6E7F9;
   color: #696880;
+  height: 100vh;
 }
 
 .projectThree .contentWrap {
@@ -720,12 +774,16 @@ li a:hover {
 }
 
 .projectThree .toolList {
-  padding: 40px 0;
+  padding: 200px 20px 20px 20px;
+  font-size: 2rem;
+  border-left: 1px solid #696880;
+  border-bottom: 1px solid #696880;
 }
 
 .projectThree h2 {
   width: 100%;
   padding: 40px;
+  border-bottom: 1px solid #696880;
 }
 
 .projectThree .content {
@@ -737,6 +795,10 @@ li a:hover {
   width: 50%;
   padding: 40px;
   height: 90vh;
+}
+
+.projectThree .projectSection h3 {
+  font-size: 1.5rem;
 }
 
 .projectThree .projectSection .mainImg {
@@ -751,7 +813,18 @@ li a:hover {
 }
 
 .projectThree .projectSection .description {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 60px 0;
+}
+
+.projectThree .direct3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectThree .direct3 .toFinal {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 /* Footer Styles */
@@ -983,22 +1056,20 @@ footer p {
     width: 100%;
   }
   /* Header */
-  header aside {
+  .headerQuote .headQuote {
     width: 100%;
-    height: auto;
-  }
-  header aside .fas {
-    font-size: 2rem;
-    padding: 20px 0;
-  }
-  .headerQuote p {
-    width: 100%;
+    padding: 20px 0 10px 0;
   }
   .headerQuote .startTrigger {
     background: none;
     border: none;
-    height: auto;
+    height: 50px;
     width: 60px;
+    padding: 0;
+  }
+  .headerQuote .startTrigger .fas {
+    font-size: 2rem;
+    padding: 20px 0;
   }
   .headerQuote .startTrigger:hover .fas {
     display: none;
@@ -1106,6 +1177,10 @@ footer p {
   }
   .projectTwo .partOneContent .contentBox {
     padding: 40px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projectTwo .partOneContent .projectLink {
     padding: 40px;
@@ -1219,6 +1294,15 @@ footer p {
     position: static;
     width: 100%;
     padding: 10px 40px;
+  }
+  .contact div .h3,
+  .contact div .socialIcons {
+    padding: 0 40px;
+  }
+  .contact div .h3 .h4,
+  .contact div .socialIcons .h4 {
+    width: 100%;
+    padding: 40px 60px;
   }
   .openContact {
     position: absolute;
