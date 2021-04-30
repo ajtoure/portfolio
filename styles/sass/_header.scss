@@ -3,7 +3,7 @@
     padding: 5px;
 }
 
-aside {
+.headerQuote {
     height: 100%;
     width: 30%;
     display: flex;
@@ -15,9 +15,21 @@ aside {
         font-family: $lightSerif;
         width: 50%;
     }
+    .startTrigger {
+        background: none;
+        border: none;
+        height: auto;
+        width: 60px;
+        padding: 60% 0 100px 0;
+    }
     .fas {
     font-size: 60px;
     padding-top: 45%;
+    }
+    .start2 {
+        display: none;
+        visibility: hidden;
+        height: 0;
     }
 }
 

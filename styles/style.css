@@ -275,7 +275,7 @@ p {
   padding: 5px;
 }
 
-aside {
+.headerQuote {
   height: 100%;
   width: 30%;
   display: -webkit-box;
@@ -289,16 +289,30 @@ aside {
       align-content: space-between;
 }
 
-aside p {
+.headerQuote p {
   margin: 0;
   padding: 30px 20px 35% 0;
   font-family: "EB Garamond", serif;
   width: 50%;
 }
 
-aside .fas {
+.headerQuote .startTrigger {
+  background: none;
+  border: none;
+  height: auto;
+  width: 60px;
+  padding: 60% 0 100px 0;
+}
+
+.headerQuote .fas {
   font-size: 60px;
   padding-top: 45%;
+}
+
+.headerQuote .start2 {
+  display: none;
+  visibility: hidden;
+  height: 0;
 }
 
 .navSection {
@@ -405,8 +419,9 @@ li a:hover {
 }
 
 .direct {
+  padding: 1px;
   width: 100%;
-  height: 100%;
+  height: 100px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,7 +448,7 @@ li a:hover {
 .projectLink {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  padding: 100px 0 40px 0;
+  padding: 20px 0 40px 0;
   font-size: 2rem;
   text-decoration: none;
   color: #A37F89;
@@ -503,6 +518,10 @@ li a:hover {
   border-bottom: 1px solid #724647;
 }
 
+.projectOne .sectionTwoText {
+  padding: 80px 0 40px 0;
+}
+
 .projectOne .direct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +579,7 @@ li a:hover {
 .projectOne .projSectTwo .description {
   width: 100%;
   padding: 1px;
-  padding: 100px 0 0 0;
+  padding: 60px 0 50px 0;
 }
 
 .projectOne .projectSection {
@@ -569,16 +588,23 @@ li a:hover {
   padding: 40px 60px;
 }
 
+.projectOne .projectSection h3 {
+  padding: 20px 0;
+  border-bottom: 1px solid #A37F89;
+}
+
 .projectOne .projectSection .mainImg, .projectOne .projectSection .secondImg {
   width: 100%;
   margin: 0 auto;
 }
 
 .projectOne .projectSection .mainImg img, .projectOne .projectSection .secondImg img {
+  /*box-shadow: 10px 10px 0 0 $darkPurple;*/
   display: inline-block;
   margin: 0;
   padding: 0;
   width: 100%;
+  border: 1px solid #696880;
 }
 
 .projectOne .projectSection .mainImg {
@@ -600,7 +626,9 @@ li a:hover {
 }
 
 .projectTwo h2 {
-  padding-left: 40px;
+  padding: 40px;
+  border-top: 1px solid #A37F89;
+  border-bottom: 1px solid #A37F89;
 }
 
 .projectTwo .content {
@@ -639,7 +667,16 @@ li a:hover {
 .projectTwo .partOneContent p {
   width: 50%;
   padding: 40px;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.projectTwo .partOneContent .description {
+  width: 50%;
+  margin: 0;
+}
+
+.projectTwo .projectLink {
+  padding: 0 40px;
 }
 
 .projectTwo .projectImg {
@@ -693,7 +730,7 @@ li a:hover {
 
 .projectThree .content {
   height: 90vh;
-  padding: 1px;
+  padding: 1px 1 40px 1px;
 }
 
 .projectThree .projectSection {
@@ -711,6 +748,28 @@ li a:hover {
   display: inline-block;
   width: 100%;
   height: auto;
+}
+
+.projectThree .projectSection .description {
+  padding: 40px 0 20px 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #A37F89;
+  height: 60%;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  float: bottom;
+}
+
+footer p {
+  color: white;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-weight: 500;
+  text-align: center;
 }
 
 /*$green: #CCE8CC;*/
@@ -854,7 +913,7 @@ li a:hover {
 }
 
 .contact h4 {
-  padding: 20px 20px 20px 10px;
+  padding: 20px;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5em;
   margin: 0;
@@ -882,7 +941,6 @@ li a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 20px;
-  border-left: 1px solid white;
 }
 
 .contact form input {
@@ -913,24 +971,6 @@ li a:hover {
   padding: 20px;
 }
 
-/*$darkPurple: #A37F89;*/
-footer {
-  background-color: #A37F89;
-  height: 60%;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  float: bottom;
-}
-
-footer p {
-  color: white;
-  margin: 0 auto;
-  padding: 40px 20px;
-  font-weight: 500;
-  text-align: center;
-}
-
 @media (max-width: 480px) {
   /* General */
   .section {
@@ -951,7 +991,26 @@ footer p {
     font-size: 2rem;
     padding: 20px 0;
   }
-  header .headerQuote p {
+  .headerQuote p {
+    width: 100%;
+  }
+  .headerQuote .startTrigger {
+    background: none;
+    border: none;
+    height: auto;
+    width: 60px;
+  }
+  .headerQuote .startTrigger:hover .fas {
+    display: none;
+    visibility: hidden;
+  }
+  .headerQuote .startTrigger:hover .start2 {
+    display: block;
+    height: auto;
+    visibility: visible;
+    font-size: 1rem;
+  }
+  .headerQuote p {
     width: 100%;
     padding: 40px 0;
   }
@@ -974,12 +1033,15 @@ footer p {
   .headerSplash h1 {
     width: 100%;
     font-size: 4rem;
+    margin: 0 20px 0 0;
   }
   .headerSplash h2 {
     width: 100%;
   }
-  .headerSplash a {
+  .headerSplash .start1 {
     position: static;
+    display: none;
+    height: 0;
   }
   /* Main */
   .projectOne {
@@ -1024,7 +1086,8 @@ footer p {
     width: 100%;
   }
   .projectTwo h2 {
-    padding: 20px 0;
+    padding: 10px;
+    margin: 20px 40px;
   }
   .projectTwo .content {
     height: auto;
@@ -1037,9 +1100,21 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .projectTwo .partOneContent p {
+  .projectTwo .partOneContent .description, .projectTwo .partOneContent .toolList {
+    padding: 10px 40px 10px 40px;
     width: 100%;
-    padding: 20px 0;
+  }
+  .projectTwo .partOneContent .contentBox {
+    padding: 40px 0;
+  }
+  .projectTwo .partOneContent .projectLink {
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    margin: 0 40px;
+  }
+  .projectTwo .partOneContent .projectLink p {
+    width: 100%;
   }
   .projectTwo .projectImg {
     -webkit-box-orient: vertical;
@@ -1050,26 +1125,27 @@ footer p {
         justify-content: space-around;
     height: 50vh;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
   }
-  .projectTwo .projectImg .img {
+  .projectTwo .projectImg margin
+.img {
     width: 100%;
     height: auto;
     position: relative;
   }
   .projectTwo .projectImg .img1 {
-    bottom: -40px;
-    left: -20px;
-    z-index: 1;
     width: 100%;
   }
   .projectTwo .projectImg .img2 {
     width: 100%;
-    right: -20px;
+  }
+  .projectTwo .mainImg {
+    padding-top: 40px;
   }
   /* Project Three*/
   .projectThree {
     width: 100%;
+    height: auto;
   }
   .projectThree h2 {
     padding: 20px;
@@ -1085,11 +1161,21 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
   .projectThree .projectSection {
     width: 100%;
     height: auto;
     padding: 20px;
+  }
+  .projectThree .projectSection .toolList {
+    padding: 40px 0 1px 0;
+  }
+  .projectThree .projectSection .description2 {
+    padding: 10px 0 40px 0;
+  }
+  .projectThree .projectLink {
+    padding: 80px 0 40px 0;
   }
   /* About */
   .aboutSection {
@@ -1098,6 +1184,7 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    margin: 1px;
   }
   .aboutContent {
     -webkit-box-orient: vertical;
@@ -1108,8 +1195,10 @@ footer p {
     width: 100%;
   }
   .aboutContent .portrait {
-    width: 80%;
-    margin: 0 40px 20px 0;
+    width: 100%;
+    padding: 40px 20px;
+    margin: 0;
+    float: none;
   }
   .aboutContent .textWrap {
     width: 100%;
@@ -1129,7 +1218,7 @@ footer p {
   .contact {
     position: static;
     width: 100%;
-    padding: 40px;
+    padding: 10px 40px;
   }
   .openContact {
     position: absolute;

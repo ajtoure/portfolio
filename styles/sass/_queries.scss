@@ -21,12 +21,38 @@
                 padding: 20px 0;
             }
         }
-        .headerQuote p {
-            width: 100%;
-            padding: 40px 0;
-        }
+        
 
     }
+    .headerQuote {
+            p {
+                width: 100%;
+            }
+            .startTrigger {
+                background: none;
+                border: none;
+                height: auto;
+                width: 60px;
+                &:hover {
+                    .fas {
+                        display: none;
+                        visibility: hidden;
+                    }
+                    .start2 {
+                    display: block;
+                    height: auto;
+                    visibility: visible;
+                    font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    .headerQuote p {
+            width: 100%;
+            padding: 40px 0;
+    }
+
     .headerNav {
         flex-direction: column;
         
@@ -42,12 +68,15 @@
         h1 {
             width: 100%;
             font-size: 4rem;
+            margin: 0 20px 0 0;
         }
         h2 {
             width: 100%;
         }
-        a {
+        .start1 {
                 position: static;
+                display: none;
+                height: 0;
             }
     }
     /* Main */
@@ -85,7 +114,8 @@
         height: auto;
         width: 100%;
         h2 {
-            padding: 20px 0;
+            padding: 10px;
+            margin: 20px 40px;
         }
         .content {
             height: auto;
@@ -94,9 +124,21 @@
         }
         .partOneContent {
             flex-direction: column;
-            p {
+            .description, .toolList {
+                    padding: 10px 40px 10px 40px;
+                    width: 100%;
+            }
+            .contentBox {
+                padding: 40px 0;
+            }
+            .projectLink {
+                padding: 40px;
                 width: 100%;
-                padding: 20px 0;
+                height: auto;
+                margin: 0 40px;
+                p {
+                    width: 100%;
+                }
             }
         }
         .projectImg {
@@ -104,22 +146,22 @@
             justify-content: space-around;
             height: 50vh;
             width: 100%;
-            padding: 20px;
+            padding: 40px;
+            margin
             .img {
                 width: 100%;
                 height: auto;
                 position: relative;
             }
             .img1 {
-                bottom: -40px;
-                left: -20px;
-                z-index: 1;
                 width: 100%;
             }
             .img2 {
                 width: 100%;
-                right: -20px;
             }
+        }
+        .mainImg {
+            padding-top: 40px;
         }
     }
     
@@ -128,6 +170,7 @@
     /* Project Three*/
     .projectThree {
         width: 100%;
+        height: auto;
         h2 {
             padding: 20px;
         }
@@ -139,11 +182,21 @@
         }
         .contentWrap {
             flex-direction: column;
+            height: auto;
         }
         .projectSection {
             width: 100%;
             height: auto;
             padding: 20px;
+            .toolList {
+            padding: 40px 0 1px 0;
+            }
+            .description2 {
+                padding: 10px 0 40px 0;
+            }
+        }
+        .projectLink {
+            padding: 80px 0 40px 0;
         }
     }
 
@@ -152,14 +205,17 @@
     .aboutSection {
         flex-direction: column;
         height: auto;
+        margin: 1px;
     }
     .aboutContent {
         flex-direction: column;
         height: auto;
         width: 100%;
         .portrait {
-            width: 80%;
-            margin: 0 40px 20px 0;
+            width: 100%;
+            padding: 40px 20px;
+            margin: 0;
+            float: none;
         }
         .textWrap {
             width: 100%;
@@ -180,7 +236,7 @@
     .contact {
         position: static;
         width: 100%;
-        padding: 40px;
+        padding: 10px 40px;
     }
 
     .openContact {

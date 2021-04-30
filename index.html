@@ -23,7 +23,8 @@
             <aside class="headerQuote">
                 <p>"There's a magic in using tech to hold a mirror up to our natural world"</p>
                 <!-- Logo or image goes here at bottom -->
-                <i class="fas fa-star-of-life"></i>
+                <button class="startTrigger"><i class="fas fa-star-of-life"></i></button>
+                <a class="start2" href="#about"><img src="./assets/arrow-right-grey.svg"></a>
             </aside>
 
             <section class="navSection">
@@ -45,7 +46,7 @@
                 <div class="headerSplash">
                     <h1>aj.touré</h1>
                     <h2>developer & creative</h2>
-                    <a href="#projectOne"><img src="./assets/arrow-right.svg" alt="go to projects"></a>
+                    <a class="start1" href="#projectOne"><img src="./assets/arrow-right.svg" alt="go to projects"></a>
                 </div>
             </section>
 
@@ -75,12 +76,16 @@
                         <img src="./assets/airheadgif2.gif" alt="">
                     </div>
                     <!-- secondary paragraph explain how it was achieved -->
+                    <div class="sectionTwoText">
+                        <h3>how it works</h3>
                     <p class="description">The user selects a time and an animation is generated, along with a quote
                         from our firebase database. The animation runs until the time runs out, at which point the app
                         prompts the user to end their meditation or start again.
                     </p>
+
+                    <a class="projectLink" href="https://airhead-meditation.netlify.app/">Try meditating</a>
+                    </div>
                     
-                    <a class="projectLink" href="https://airhead-meditation.netlify.app/">See it in action</a>
                 </div>
             </div>
             
@@ -98,10 +103,16 @@
                     <h2>what do you know</h2>
                     <div class="partOneContent">
                         <p class="toolList">HTML, CSS, Javascript ES6, JSX, React, React Router, Ajax, Open API</p>
-                        <p class="description">For this project we were assigned an application in a simulated agency setting. It presents
-                            the user with a definition and two homophones. The user selects the word that corresponds
+                        <div class="contentBox">
+                            <p class="description">For this project we were assigned an application in a simulated agency setting. It presents
+                            the user with a definition and two homophones. The user selects the word th
+                            at corresponds
                             with the definition.
                         </p>
+                        <a class="projectLink" href="https://airhead-meditation.netlify.app/">
+                            <p>Can you beat the top score?</p>      
+                        </a>
+                        </div>
                     </div>
                 </div>
 
@@ -130,22 +141,19 @@
                 <div class="contentWrap">
                     <div class="projectSection projSectThreeOne">
                         <div class="mainImg">
-                            <img src="https://dummyimage.com/600x400/0fc0c9/6b44a6" alt="">
+                            <img src="./assets/deliciouspsconversion.jpg" alt="">
                         </div>
                         <p class="toolList">HTML5 & CSS3</p>
                     </div>
 
                     <div class="projectSection projSectThreeTwo">
+                        <h3>what is it?</h3>
                         <!--Initial paragraph describing what the app does-->
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat amet labore quam
-                            magnam id.
+                        <p class="description">A multipage, responsive PSD conversion for a classically ethereal foodie blog.
                         </p>
                         <!-- secondary paragraph explain how it was achieved -->
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit excepturi distinctio
-                            autem!
-                            Impedit in repellendus aspernatur quaerat possimus nemo repellat nam, alias aut, assumenda
-                            ullam
-                            cupiditate provident, odit reiciendis.</p>
+                        <p class="description description2">Provided with nothing but the style sheet and jpg template - this site was developed from the ground up with a focus on accessibility, responsiveness, and good, clean UI/UX design.</p>
+                        <a class="projectLink" href="https://jolly-panini-b0b454.netlify.app/">Hungry? Take a look and get hungrier.</a>
                     </div>
                 </div>
 
@@ -161,13 +169,13 @@
     <section class="aboutSection" id="about">
         <div class="wrapper aboutContent">
             <div class="portrait">
-                <img src="https://dummyimage.com/400x600/f2c6f2/fff" alt="portrait image of developer AJ Toure">
+                <img src="./assets/Amigos - Avatar.png" alt="portrait image of developer AJ Toure">
             </div>
 
             <div class="textWrap">
                 <h2>hi, i'm aj!</h2>
                 <div class="textWrapBox">
-                    <p>Who is AJ Touré? A developer, an artist, and a cyborg.</p>
+                    <p>Who is AJ Touré? A developer, an artist, and a cyborg, just like you!</p>
                     <p>What have they done? A lot! They've been a writer, an interior designer, a lampmaker, an
                         instructor,
                         a social media consultant and emergency evacuations coordinator, all leading them to where they
@@ -203,9 +211,9 @@
 
         <!-- Contact -->
         <div class="wrapper contact">
-            <button class="openContact">
+            <!--<button class="openContact">
                 <i class="fas fa-chevron-right"></i>
-            </button>
+            </button>-->
 
             <div>
                 <div class="socialIcons">
