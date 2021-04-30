@@ -27,9 +27,8 @@
             </aside>
 
             <section class="navSection">
-                <div class="headerNav">
-                    <nav>
-                        <ul>
+                    <nav class="headerNav">
+                        <ul class="navList">
                             <li>
                                 <a href="#projects">Projects</a>
                             </li>
@@ -41,7 +40,6 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
 
 
                 <div class="headerSplash">
@@ -58,7 +56,8 @@
     <main class="projects" id="projects">
 
         <section class="project projectOne" id="projectOne">
-            <div class="wrapper content">
+            <div class=wrapper>
+                <div class="content">
                 <div class="projectSection projSectOne">
                     <h2>airhead</h2>
                     <!--Initial paragraph describing what the app does-->
@@ -67,21 +66,24 @@
                         practice.
                     </p>
                     <div class="mainImg">
-                        <img src="./assets/airheadapp.png" alt="">
+                        <img src="./assets/airheadgif1.gif" alt="">
                     </div>
                 </div>
 
                 <div class="projectSection projSectTwo">
                     <div class="secondImg">
-                        <img src="https://dummyimage.com/600x400/abd1ff/356fd4" alt="">
+                        <img src="./assets/airheadgif2.gif" alt="">
                     </div>
                     <!-- secondary paragraph explain how it was achieved -->
                     <p class="description">The user selects a time and an animation is generated, along with a quote
                         from our firebase database. The animation runs until the time runs out, at which point the app
                         prompts the user to end their meditation or start again.
                     </p>
+                    
+                    <a class="projectLink" href="https://airhead-meditation.netlify.app/">See it in action</a>
                 </div>
-
+            </div>
+            
             </div>
             <div class="direct direct1">
                 <a href="#header"><img src="./assets/arrow-left-purple.svg" alt="back to home"></a>
@@ -96,7 +98,7 @@
                     <h2>what do you know</h2>
                     <div class="partOneContent">
                         <p class="toolList">HTML, CSS, Javascript ES6, JSX, React, React Router, Ajax, Open API</p>
-                        <p>For this project we were assigned an application in a simulated agency setting. It presents
+                        <p class="description">For this project we were assigned an application in a simulated agency setting. It presents
                             the user with a definition and two homophones. The user selects the word that corresponds
                             with the definition.
                         </p>
@@ -106,10 +108,10 @@
                 <!-- secondary paragraph explain how it was achieved -->
                 <div class="projectImg part part2">
                     <div class="img img1">
-                        <img src="https://dummyimage.com/600x400/a2ebd2/356fd4" alt="">
+                        <img src="./assets/whatdoyounogif.gif" alt="">
                     </div>
                     <div class="img img2">
-                        <img src="https://dummyimage.com/600x400/b6bdd9/6b44a6" alt="">
+                        <img src="./assets/whatdoyounogif2.gif" alt="">
                     </div>
                 </div>
 
@@ -135,11 +137,11 @@
 
                     <div class="projectSection projSectThreeTwo">
                         <!--Initial paragraph describing what the app does-->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat amet labore quam
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat amet labore quam
                             magnam id.
                         </p>
                         <!-- secondary paragraph explain how it was achieved -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit excepturi distinctio
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit excepturi distinctio
                             autem!
                             Impedit in repellendus aspernatur quaerat possimus nemo repellat nam, alias aut, assumenda
                             ullam
@@ -164,18 +166,37 @@
 
             <div class="textWrap">
                 <h2>hi, i'm aj!</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quo animi dicta amet ducimus
-                    quibusdam reprehenderit ex maiores beatae fuga. Incidunt quo a quisquam enim non facilis ex
-                    perferendis cupiditate molestias alias reiciendis beatae, totam autem sunt iusto similique animi?
-                </p>
-            </div>
-            <div class="skillIcons">
-                <!-- Skill Icons will go here -->
-                <i class="fab fa-github-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-react"></i>
-                <i class="fas fa-code"></i>
-                <i class="fab fa-css3"></i>
+                <div class="textWrapBox">
+                    <p>Who is AJ Touré? A developer, an artist, and a cyborg.</p>
+                    <p>What have they done? A lot! They've been a writer, an interior designer, a lampmaker, an
+                        instructor,
+                        a social media consultant and emergency evacuations coordinator, all leading them to where they
+                        are
+                        now!</p>
+
+                    <p>Curious, versatile, driven and tenacious, their perspective on the world around them - especially
+                        the
+                        natural world - is why they chose to become a developer.</p>
+
+                    <p>Tech is an incredible gift, and in the right hands, it can change not only our individual lives
+                        but
+                        also the world we live in!</p>
+
+                    <p>There's something incredibly exciting about that!</p>
+
+                    <p>Wanna change the world with me?</p>
+                </div>
+                <div class="skillIcons">
+                    <!-- Skill Icons will go here -->
+                    <i class="fab fa-github-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fas fa-code"></i>
+                    <i class="fab fa-css3"></i>
+                </div>
+                <a class="resumeDownload" href="" >
+                    <p>Download my resume! [PDF]</p>
+                </a>
             </div>
             <!-- Resume Link -->
         </div>
@@ -185,7 +206,7 @@
             <button class="openContact">
                 <i class="fas fa-chevron-right"></i>
             </button>
-            
+
             <div>
                 <div class="socialIcons">
                     <h3>come find me at:</h3>

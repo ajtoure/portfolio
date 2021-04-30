@@ -259,6 +259,10 @@ h1, h2, h3 {
   padding: 0;
 }
 
+h2, h3 {
+  text-transform: capitalize;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -306,41 +310,6 @@ aside .fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40px;
-}
-
-.headerSplash {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.headerSplash h1 {
-  width: 60%;
-  padding-top: 35%;
-  margin-bottom: 30px;
-  font-size: 6em;
-  -webkit-text-stroke: 1px black;
-  -webkit-text-fill-color: #F6EFEE;
-}
-
-.headerSplash h2 {
-  width: 50%;
-  height: 60px;
-}
-
-.headerSplash a {
-  color: black;
-  width: 15%;
-  position: relative;
-  left: -50px;
-  top: -50px;
-}
-
-.headerSplash a img {
-  width: 100%;
   height: auto;
 }
 
@@ -356,8 +325,8 @@ nav ul {
 }
 
 ul {
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 40px 0;
+  padding: 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   width: 100%;
@@ -371,12 +340,64 @@ ul {
 
 li {
   list-style-type: none;
-  padding-right: 20px;
+  padding: 20px 0;
 }
 
 li a {
+  margin: 0;
+  padding: 5px;
   text-decoration: none;
   color: black;
+}
+
+li a:hover {
+  border-bottom: 3px solid #A37F89;
+}
+
+.headerSplash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.headerSplash h1 {
+  width: 60%;
+  padding-top: 25%;
+  margin: 100px 0 30px 0;
+  font-size: 6em;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: #F6EFEE;
+}
+
+.headerSplash h2 {
+  width: 50%;
+  height: 60px;
+  text-transform: none;
+}
+
+.headerSplash a {
+  color: black;
+  width: 15%;
+  position: absolute;
+  height: 0;
+  left: -50px;
+  top: -50px;
+}
+
+.headerSplash a img {
+  width: 100%;
+  height: 0;
+}
+
+.headerSplash:hover a {
+  position: relative;
+  height: 100px;
+}
+
+.headerSplash:hover a img {
+  height: auto;
 }
 
 .projects {
@@ -385,7 +406,8 @@ li a {
 
 .direct {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,10 +416,38 @@ li a {
           justify-content: space-between;
 }
 
+.direct a {
+  width: 100%;
+  height: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: none;
+}
+
+.direct:hover a {
+  display: block;
+  height: auto;
+}
+
+.projectLink {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  padding: 100px 0 40px 0;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #A37F89;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+  color: #696880;
+}
+
 .toolList {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5rem;
-  width: 80%;
+  width: 100%;
 }
 
 .content {
@@ -442,8 +492,8 @@ li a {
 }
 
 .projectOne .content .toolList {
-  padding: 40px 0 10px 0;
-  font-size: 1rem;
+  padding: 1px 0 50px 20px;
+  border-left: 1px solid #724647;
 }
 
 .projectOne .content h2 {
@@ -485,12 +535,15 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1px;
 }
 
 .projectOne .projSectOne p.description {
-  width: 80%;
-  padding: 40px 0;
+  width: 100%;
+  padding: 60px 0 40px 20px;
 }
 
 .projectOne .projSectTwo {
@@ -501,11 +554,11 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1px;
+  padding-top: 60px;
 }
 
-.projectOne .projSectTwo p.description {
-  width: 80%;
+.projectOne .projSectTwo .description {
+  width: 100%;
   padding: 1px;
   padding: 100px 0 0 0;
 }
@@ -513,7 +566,12 @@ li a {
 .projectOne .projectSection {
   width: 50%;
   height: 90vh;
-  padding: 40px;
+  padding: 40px 60px;
+}
+
+.projectOne .projectSection .mainImg, .projectOne .projectSection .secondImg {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .projectOne .projectSection .mainImg img, .projectOne .projectSection .secondImg img {
@@ -524,15 +582,15 @@ li a {
 }
 
 .projectOne .projectSection .mainImg {
-  width: 100%;
   height: auto;
   margin-bottom: 0;
+  padding: 40px 40px 1px 1px;
 }
 
 .projectOne .projectSection .secondImg {
-  width: 80%;
   height: auto;
-  padding-top: 0px;
+  margin-top: 60px;
+  padding: 1px;
 }
 
 /* Project #2 - Styles */
@@ -599,6 +657,7 @@ li a {
 
 .projectTwo .projectImg .img {
   width: 45%;
+  padding: 1px;
 }
 
 .projectTwo .projectImg .img img {
@@ -606,7 +665,6 @@ li a {
   height: auto;
   display: inline-block;
   margin: 0px;
-  padding: 0;
 }
 
 /* Project #3 - Styles */
@@ -646,6 +704,7 @@ li a {
 
 .projectThree .projectSection .mainImg {
   width: 100%;
+  padding: 1px;
 }
 
 .projectThree .projectSection .mainImg img {
@@ -659,59 +718,95 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 80vh;
 }
 
 .aboutContent {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
   margin: 0;
   padding: 40px;
-  height: 100vh;
+  height: auto;
   color: #724647;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
 }
 
 .aboutContent .portrait {
-  width: 40%;
+  width: 25%;
   height: auto;
   float: left;
+  padding: 1px;
+  margin: 40px 40px 20px 20px;
 }
 
 .aboutContent .portrait img {
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutContent .textWrap {
+  padding: 20px;
+  width: 100%;
 }
 
 .aboutContent .textWrap h2 {
-  padding: 20px 20px 20px 40px;
-  width: 60%;
-  float: right;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  float: none;
   font-size: 1.5em;
+  margin: 20px 0;
+  border-top: 1px solid #A37F89;
+  border-bottom: 1px solid #A37F89;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
+.aboutContent .textWrap .textWrapBox {
+  padding: 20px 0;
+  margin: 1px;
+  height: auto;
 }
 
 .aboutContent .textWrap p {
-  padding: 20px 40px;
-  width: 60%;
-  float: right;
+  padding: 10px 0;
+  width: 100%;
+  float: none;
+}
+
+.aboutContent .textWrap a {
+  text-decoration: none;
+  color: #A37F89;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .aboutContent .skillIcons {
-  padding: 10px;
-  margin: 0 auto;
+  padding: 10px 10px 10px 0;
+  margin: 0;
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .aboutContent .skillIcons i {
   font-size: 2rem;
   color: #724647;
   margin-right: 20px;
-  padding: 10px;
+  padding: 10px 0;
+}
+
+.aboutContent .resumeDownload :hover {
+  text-decoration: underline;
 }
 
 .contact {
@@ -719,13 +814,13 @@ li a {
   display: -ms-flexbox;
   display: flex;
   background-color: #CCE8CC;
-  width: 50%;
+  width: 40%;
   margin: 0;
-  height: 100vh;
+  height: 80vh;
   color: #696880;
   padding: 10px;
   position: relative;
-  right: -360px;
+  overflow: clip;
 }
 
 .contact .openContact {
@@ -740,7 +835,7 @@ li a {
           transform: scaleX(-1);
   padding: 10px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .contact .openContact i {
@@ -772,7 +867,7 @@ li a {
 
 .contact .socialIcons a {
   text-decoration: none;
-  color: white;
+  color: #A37F89;
   padding-right: 20px;
 }
 
@@ -786,7 +881,8 @@ li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 20px 20px 10px;
+  padding: 20px;
+  border-left: 1px solid white;
 }
 
 .contact form input {
@@ -840,13 +936,20 @@ footer p {
   .section {
     height: auto;
   }
+  .toolList {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
   /* Header */
   header aside {
     width: 100%;
     height: auto;
   }
   header aside .fas {
-    padding: 40px 0;
+    font-size: 2rem;
+    padding: 20px 0;
   }
   header .headerQuote p {
     width: 100%;
@@ -886,6 +989,7 @@ footer p {
             flex-direction: column;
     padding: 40px 0;
     height: auto;
+    width: 100%;
   }
   .projectOne h2 {
     width: 100%;
@@ -894,16 +998,17 @@ footer p {
   .projectOne .projectSection {
     padding: 1px 40px;
     width: 100%;
-    height: 80vh;
+    height: auto;
   }
-  .projectOne .projectSection p.description {
-    padding: 20px 0;
+  .projectOne .projectSection .description {
+    width: 100%;
   }
   .projectOne .projSectTwo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    width: 100%;
   }
   .projectOne .content {
     -webkit-box-orient: vertical;
@@ -911,10 +1016,12 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    width: 100%;
   }
   /* Project Two */
   .projectTwo {
     height: auto;
+    width: 100%;
   }
   .projectTwo h2 {
     padding: 20px 0;
@@ -922,6 +1029,7 @@ footer p {
   .projectTwo .content {
     height: auto;
     padding: 20px;
+    width: 100%;
   }
   .projectTwo .partOneContent {
     -webkit-box-orient: vertical;
@@ -945,7 +1053,7 @@ footer p {
     padding: 20px;
   }
   .projectTwo .projectImg .img {
-    width: 75%;
+    width: 100%;
     height: auto;
     position: relative;
   }
@@ -953,12 +1061,16 @@ footer p {
     bottom: -40px;
     left: -20px;
     z-index: 1;
+    width: 100%;
   }
   .projectTwo .projectImg .img2 {
     width: 100%;
     right: -20px;
   }
   /* Project Three*/
+  .projectThree {
+    width: 100%;
+  }
   .projectThree h2 {
     padding: 20px;
   }
@@ -980,5 +1092,52 @@ footer p {
     padding: 20px;
   }
   /* About */
+  .aboutSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .aboutContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .aboutContent .portrait {
+    width: 80%;
+    margin: 0 40px 20px 0;
+  }
+  .aboutContent .textWrap {
+    width: 100%;
+  }
+  .aboutContent .textWrap h2 {
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px auto;
+  }
+  .aboutContent .textWrapBox {
+    width: 100%;
+  }
+  .aboutContent .skillIcons {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .contact {
+    position: static;
+    width: 100%;
+    padding: 40px;
+  }
+  .openContact {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
   /**/
 }
