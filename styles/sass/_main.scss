@@ -23,8 +23,8 @@
 
 .project__link {
     font-family: $heavySerif;
-    padding: 20px 0 40px 0;
-    font-size: 1rem;
+    padding: 20px 0;
+    font-size: 1.5rem;
     text-decoration: none;
     color: $darkPurple;
     &:hover {
@@ -67,62 +67,7 @@
     flex-wrap: wrap;
     height: 100vh;
     padding: 1px;
-    .project__airhead--content {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        height: 90vh;
-        .project__tool__list {
-            padding: 1px 0 50px 20px;
-            border-left: 1px solid $darkRed;
-        }
-        h2 {
-            width: 100%;
-            padding: 10px 0 10px 0;
-            border-top: 1px solid $darkRed;
-            border-bottom: 1px solid $darkRed;
-        }
-    }
-    .project__airhead--sect--two--text {
-        padding: 80px 0 40px 0;
-    }
-    .project__directory {
-        display: flex;
-        justify-content: space-between;
-    }
-    .project__directory--one {
-        size: 1rem;
-        color: $darkRed;
-        padding: 5px;
-        a {
-            width: 10%;
-        }
-        svg.iconify{
-            height: 2em;
-            color: $darkPurple;
-        }
-    }
-    .project__airhead--sect--one {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 1px;
-            p.description {
-                width: 100%;
-                padding: 20px 0 20px 20px;
-            }
-        }
-    .project__airhead--sect--two {
-            display: flex;
-            flex-direction: column;
-            padding-top: 60px;
-            .project__description {
-                width: 100%;
-                padding: 1px;
-                padding: 30px 0 20px 0;
-            }
-        }
-
+    
     .project__airhead--section {
         width: 50%;
         height: 90vh;
@@ -159,6 +104,63 @@
             padding: 20px 0;
         }
     }
+    .project__airhead--content {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        height: 90vh;
+        .project__tool__list {
+            padding: 1px 0 50px 20px;
+            border-left: 1px solid $darkRed;
+        }
+        h2 {
+            width: 100%;
+            padding: 10px 0 10px 0;
+            border-top: 1px solid $darkRed;
+            border-bottom: 1px solid $darkRed;
+        }
+    }
+    .project__airhead--sect--two--text {
+        padding: 80px 0 40px 0;
+    }
+    
+    .project__airhead--sect--one {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1px;
+            p.description {
+                width: 100%;
+                padding: 20px 0 20px 20px;
+            }
+        }
+    .project__airhead--sect--two {
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            .project__description {
+                width: 100%;
+                padding: 1px;
+                padding: 30px 0 20px 0;
+            }
+        }
+
+    .project__directory {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project__directory--one {
+        size: 1rem;
+        color: $darkRed;
+        padding: 5px;
+        a {
+            width: 10%;
+        }
+        svg.iconify{
+            height: 2em;
+            color: $darkPurple;
+        }
+    }    
 }
 
 /* Project #2 - Styles */
@@ -194,7 +196,7 @@
             img {
                 width: 100%;
                 height: auto;
-                display: inline-block;
+                display: block;
                 margin: 0px;
             }
         }
@@ -202,6 +204,7 @@
             padding-top:20px;
         }
     }
+
     .project__whatdo--sect--one {
         width: 50%;
         height: 90vh;
@@ -215,7 +218,7 @@
             display: flex;
             flex-direction: column;
             padding: 1px;
-            width: 50%;
+            width: 100%;
             height: 90vh;
             .project__description {
                 width: 100%;
@@ -234,31 +237,39 @@
         padding: 80px 40px 40px 40px;
         width: 50%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: space-between;
         height: 90vh;
         .project__whatdo--sect--two--box {
             display: flex;
             flex-direction: column;
             width: 100%;
             height: auto;
+            padding: 40px 0;
         }
         .project__link {
-            padding: 40px;
-            width: 50%;      
+            padding: 20px 0;
+            width: 50%;  
             p {
                 width: 100%;
                 padding: 40px 0;
             }
         }
+        .project__whatdo__img--two {
+            width: 100%;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 
 
-    .project__whatdo__img--two {
-        width: 100%;
-    }
     .project__directory--two {
         width: 100%;
         margin: 0 auto;
+        height: 10vh;
         &:last-child {
             align-self: flex-end;
         }
@@ -269,8 +280,7 @@
             }
         }
     }
-    
-    
+      
 }
 
 /* Project #3 - Styles */
