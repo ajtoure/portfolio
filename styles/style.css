@@ -648,7 +648,7 @@ button:focus {
 }
 
 .project__whatdo .project__whatdo--content {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,9 +713,12 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1px;
+  padding: 40px;
   width: 100%;
   height: 90vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .project__description {
@@ -724,9 +727,19 @@ button:focus {
   margin: 0;
 }
 
-.project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .tool__list {
-  padding: 60px 40px 40px 40px;
+.project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .project__tool__list {
+  padding: 50% 40px 40px 40px;
   width: 100%;
+}
+
+.project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .project__whatdo__img--one {
+  width: 100%;
+}
+
+.project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .project__whatdo__img--one img {
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 .project__whatdo .project__whatdo--sect--two {
@@ -800,14 +813,14 @@ button:focus {
 }
 
 /* Project #3 - Styles */
-.projectThree {
+.project__delicious {
   padding: 1px;
   background-color: #D6E7F9;
   color: #696880;
   height: 100vh;
 }
 
-.projectThree .contentWrap {
+.project__delicious .project__delicious--content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,56 +828,65 @@ button:focus {
       flex-wrap: wrap;
 }
 
-.projectThree .tool__list {
+.project__delicious .project__tool__list {
   padding: 200px 20px 20px 20px;
   font-size: 2rem;
   border-left: 1px solid #696880;
   border-bottom: 1px solid #696880;
 }
 
-.projectThree h2 {
+.project__delicious h2 {
   width: 100%;
   padding: 40px;
   border-bottom: 1px solid #696880;
 }
 
-.projectThree .content {
-  height: 90vh;
-  padding: 1px 1 40px 1px;
-}
-
-.projectThree .projectSection {
+.project__delicious .project__delicious--section {
   width: 50%;
   padding: 40px;
   height: 90vh;
 }
 
-.projectThree .projectSection h3 {
-  font-size: 1.5rem;
-}
-
-.projectThree .projectSection .mainImg {
+.project__delicious .project__delicious--section .project__delicious__img {
   width: 100%;
   padding: 1px;
 }
 
-.projectThree .projectSection .mainImg img {
+.project__delicious .project__delicious--section .project__delicious__img img {
   display: inline-block;
   width: 100%;
   height: auto;
 }
 
-.projectThree .projectSection .description {
-  padding: 40px 0 60px 0;
+.project__delicious .project__delicious--section .project__description {
+  padding: 20px 0;
 }
 
-.projectThree .project__directory {
+.project__delicious .project__delicious--sect--two {
+  padding: 30% 40px 40px 40px;
+  border-left: 2px solid #696880;
+  height: 90vh;
+}
+
+.project__delicious .project__delicious--sect--two h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #696880;
+}
+
+.project__delicious .project__delicious--sect--two .project__link {
+  padding: 60px 0 0 0 0;
+}
+
+.project__delicious .project__directory {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 10vh;
 }
 
-.projectThree .project__directory .toFinal {
+.project__delicious .project__directory .toFinal {
   width: 40px;
   -ms-flex-item-align: end;
       align-self: flex-end;

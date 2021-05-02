@@ -176,7 +176,7 @@
         border-bottom: 1px solid $darkPurple;
     }
     .project__whatdo--content {
-        height: 100vh;
+        height: 90vh;
         display: flex;
         flex-wrap: wrap;
         color: $darkPurple;
@@ -217,17 +217,26 @@
         .project__whatdo--sect--one--box {
             display: flex;
             flex-direction: column;
-            padding: 1px;
+            padding: 40px;
             width: 100%;
             height: 90vh;
+            justify-content: space-between;
             .project__description {
                 width: 100%;
                 padding: 20px;
                 margin: 0;
             }
-            .tool__list {
-                padding: 60px 40px 40px 40px;
+            .project__tool__list {
+                padding: 50% 40px 40px 40px;
                 width: 100%;
+            }
+            .project__whatdo__img--one {
+                width: 100%;
+                img {
+                    width: 100%;
+                    display: block;
+                    height: auto;
+                }
             }
         }
     }
@@ -285,16 +294,16 @@
 
 /* Project #3 - Styles */
 
-.projectThree {
+.project__delicious {
     padding: 1px;
     background-color: $blue;
     color: $grey;
     height: 100vh;
-    .contentWrap {
+    .project__delicious--content {
         display: flex;
         flex-wrap: wrap;
     }
-    .tool__list {
+    .project__tool__list {
         padding: 200px 20px 20px 20px;
         font-size: 2rem;
         border-left: 1px solid $grey;
@@ -305,18 +314,12 @@
         padding: 40px;
         border-bottom: 1px solid $grey;
     }
-    .content {
-        height: 90vh;
-        padding: 1px 1 40px 1px;
-    }
-    .projectSection {
+    .project__delicious--section {
         width: 50%;
         padding: 40px;
         height: 90vh;
-        h3 {
-            font-size: 1.5rem;
-        }
-        .mainImg {
+        
+        .project__delicious__img {
             width: 100%;
             padding: 1px;
             img {
@@ -325,12 +328,27 @@
                 height: auto;
             }
         }
-        .description {
-            padding: 40px 0 60px 0
+        .project__description {
+            padding: 20px 0;
+        }
+    }
+    .project__delicious--sect--two {
+        padding: 30% 40px 40px 40px;
+        border-left: 2px solid $grey;
+        height: 90vh;
+        h3 {
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $grey;
+        }
+        .project__link {
+            padding: 60px 0 0 0 0;
         }
     }
     .project__directory {
         display: flex;
+        height: 10vh;
         .toFinal {
             width: 40px;
             align-self: flex-end;
