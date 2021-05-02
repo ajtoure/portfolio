@@ -2,7 +2,7 @@
     padding: 1px;
 }
 
-.direct {
+.project__directory {
     padding: 1px;
     width: 100%;
     height: 100px;
@@ -21,11 +21,10 @@
     }
 }
 
-.projectLink {
+.project__link {
     font-family: $heavySerif;
-    font-style: italic;
     padding: 20px 0 40px 0;
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: $darkPurple;
     &:hover {
@@ -34,15 +33,16 @@
     }
 }
 
-.toolList {
+.project__tool__list {
     font-family: $heavySerif;
     font-size: 1.5rem;
     width: 100%;
 }
 
-.content {
+.project__whatdo--content,
+.project__airhead--content {
     text-decoration: none;
-    .direct a {
+    .project__directory a {
         text-decoration: none;
         font-size: 40px;
         padding: 1px;
@@ -60,19 +60,19 @@
 
 /* Project #1 - Styles */
 
-.projectOne {
+.project__airhead {
     background-color: $secondNeutral;
     color: $darkRed;
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
     padding: 1px;
-    .content {
+    .project__airhead--content {
         width: 100%;
         margin: 0;
         display: flex;
         height: 90vh;
-        .toolList {
+        .project__tool__list {
             padding: 1px 0 50px 20px;
             border-left: 1px solid $darkRed;
         }
@@ -83,14 +83,14 @@
             border-bottom: 1px solid $darkRed;
         }
     }
-    .sectionTwoText {
+    .project__airhead--sect--two--text {
         padding: 80px 0 40px 0;
     }
-    .direct {
+    .project__directory {
         display: flex;
         justify-content: space-between;
     }
-    .direct1 {
+    .project__directory--one {
         size: 1rem;
         color: $darkRed;
         padding: 5px;
@@ -102,7 +102,7 @@
             color: $darkPurple;
         }
     }
-    .projSectOne {
+    .project__airhead--sect--one {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -112,18 +112,18 @@
                 padding: 20px 0 20px 20px;
             }
         }
-    .projSectTwo {
+    .project__airhead--sect--two {
             display: flex;
             flex-direction: column;
             padding-top: 60px;
-            .description {
+            .project__description {
                 width: 100%;
                 padding: 1px;
                 padding: 30px 0 20px 0;
             }
         }
 
-    .projectSection {
+    .project__airhead--section {
         width: 50%;
         height: 90vh;
         padding: 40px 60px;
@@ -131,11 +131,13 @@
             padding: 20px 0;
             border-bottom: 1px solid $darkPurple;
         }
-        .mainImg, .secondImg {
+        .project__airhead__img--one, 
+        .project__airhead__img--two {
             width: 100%;
             margin: 0 auto;
+            height: auto;
+            padding: 1px;
             img {
-                /*box-shadow: 10px 10px 0 0 $darkPurple;*/
                 display: inline-block;
                 margin: 0;
                 padding: 0;
@@ -143,21 +145,17 @@
                 border: 1px solid $grey;
             }
         }
-        .mainImg {
-            height: auto;
+        .project__airhead__img--one {
             margin-bottom: 0;
             padding: 40px 40px 1px 1px;
         }
-        .secondImg {
-            height: auto;
+        .project__airhead__img--two {
             margin-top: 60px;
-            padding:  1px;
-            width: 80%;
         }
-        .sectionTwoText {
+        .project__airhead--sect--two--text {
             padding-top: 20px;
         }
-        .projectLink {
+        .project__link {
             padding: 20px 0;
         }
     }
@@ -165,56 +163,100 @@
 
 /* Project #2 - Styles */
 
-.projectTwo {
+.project__whatdo {
     background-color: $yellow;
     padding: 1px;
     height: 100vh;
+    width: 100%;
     h2 {
         padding: 20px 40px;
         border-top: 1px solid $darkPurple;
         border-bottom: 1px solid $darkPurple;
     }
-    .content {
-        padding: 40px;
-        height: 90vh;
+    .project__whatdo--content {
+        height: 100vh;
         display: flex;
         flex-wrap: wrap;
         color: $darkPurple;
         width: 100%;
     }
-
-    .part {
+    .project__whatdo--section {
+        width: calc(100% - 80px);
+        height: auto;
+        display: flex;
+        justify-content: space-between;
         padding: 1px;
-    } 
-
-    .part1 p {
+        margin: 0 auto;
+        .project__whatdo__img {
+            width: 100%;
+            padding: 1px;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0px;
+            }
+        }
+        .project__description {
+            padding-top:20px;
+        }
+    }
+    .project__whatdo--sect--one {
+        width: 50%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        p {
         padding: 1px;
         font-size: $lightSerif;
+        }
+        .project__whatdo--sect--one--box {
+            display: flex;
+            flex-direction: column;
+            padding: 1px;
+            width: 50%;
+            height: 90vh;
+            .project__description {
+                width: 100%;
+                padding: 20px;
+                margin: 0;
+            }
+            .tool__list {
+                padding: 60px 40px 40px 40px;
+                width: 100%;
+            }
+        }
     }
 
-    .partOneContent {
+
+    .project__whatdo--sect--two {
+        padding: 80px 40px 40px 40px;
+        width: 50%;
         display: flex;
-        padding: 1px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        p {
-            width: 50%;
-            padding: 20px;
-            margin: 0;
-        }
-        .description {
-            width: 50%;
-            margin: 0;
-        }
-        .toolList {
-            padding: 60px 40px 40px 40px;
-        }
-        .contentBox {
+        flex-direction: column-reverse;
+        height: 90vh;
+        .project__whatdo--sect--two--box {
             display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+        .project__link {
+            padding: 40px;
+            width: 50%;      
+            p {
+                width: 100%;
+                padding: 40px 0;
+            }
         }
     }
-    .direct2 {
+
+
+    .project__whatdo__img--two {
+        width: 100%;
+    }
+    .project__directory--two {
         width: 100%;
         margin: 0 auto;
         &:last-child {
@@ -227,42 +269,8 @@
             }
         }
     }
-    .projectLink {
-        padding: 40px;
-        width: 50%;
-        border-left: 2px solid $darkPurple;
-        margin-left: 100px;
-        p {
-            width: 100%;
-            padding: 40px 0;
-        }
-    }
     
-    .projectImg {
-        width: calc(100% - 80px);
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        padding: 1px;
-        margin: 0 auto;
-        .img {
-            width: 45%;
-            padding: 1px;
-            height: auto;
-            img {
-                width: 100%;
-                height: auto;
-                display: inline-block;
-                margin: 0px;
-            }
-        }
-    }
-
-    .projectSection {
-        .sectionTwoText {
-            padding-top:20px;
-        }
-    }
+    
 }
 
 /* Project #3 - Styles */
@@ -276,7 +284,7 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .toolList {
+    .tool__list {
         padding: 200px 20px 20px 20px;
         font-size: 2rem;
         border-left: 1px solid $grey;
@@ -311,7 +319,7 @@
             padding: 40px 0 60px 0
         }
     }
-    .direct3 {
+    .project__directory {
         display: flex;
         .toFinal {
             width: 40px;

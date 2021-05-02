@@ -1,9 +1,9 @@
-.headerWrap {
+.header__wrap {
     display: flex;
     padding: 5px;
 }
 
-.headerQuote {
+.header__quote {
     height: 100%;
     width: 30%;
     display: flex;
@@ -16,7 +16,7 @@
         width: 50%;
         font-size: 1.5rem;
     }
-    .startTrigger {
+    .header__start--mobile {
         background: none;
         border: none;
         height: auto;
@@ -30,7 +30,7 @@
     font-size: 60px;
     padding-top: 45%;
     }
-    .start2 {
+    .header__start--mobile--a {
         display: none;
         visibility: hidden;
         height: 0;
@@ -38,50 +38,42 @@
 }
 
 
-.navSection {
+.header__nav--section {
     height: 100%;
     width: 70%;
 }
 
-.headerNav {
+.header__nav {
     display: flex;
     height: auto;
-}
-
-nav {
     padding: 1px;
     width: 100%;
-    ul {
+    .header__nav__list {
         display: flex;
-    }
-}
-
-ul {
-    margin: 40px 0;
-    padding: 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-li {
-    list-style-type: none;
-    padding: 20px 0;
-    a {
-        margin: 0;
-        padding: 5px;
-        text-decoration: none;
-        color: black;
-    }
-    a:hover {
+        margin: 40px 0;
+        padding: 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    li {
+        list-style-type: none;
+        padding: 20px 0;
+        a {
+            margin: 0;
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
         border-bottom: 3px solid $darkPurple;
+        }
+    }
     }
 }
 
-
-.headerSplash {
+.header__splash {
     display: flex;
     flex-wrap: wrap;
     h1 {
@@ -115,7 +107,7 @@ li {
 
 
 
-.headerSplash:hover {
+.header__splash:hover {
         a {
             position: relative;
             height: 100px; 

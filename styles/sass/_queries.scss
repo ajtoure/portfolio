@@ -4,7 +4,7 @@
     .section{
         height: auto;
     }
-    .toolList {
+    .project__tool__list {
         width: 100%;
     }
     .description{
@@ -12,12 +12,12 @@
     } 
     /* Header */
 
-    .headerQuote {
-            .headQuote {
+    .header__quote {
+            .header__quote__text {
                 width: 100%;
                 padding: 20px 0 10px 0;
             }
-            .startTrigger {
+            .header__start--mobile {
                 background: none;
                 border: none;
                 height: 50px;
@@ -32,7 +32,7 @@
                         display: none;
                         visibility: hidden;
                     }
-                    .start2 {
+                    .header__start--mobile--a {
                     display: block;
                     height: auto;
                     visibility: visible;
@@ -42,23 +42,23 @@
             }
         }
 
-    .headerQuote p {
+    .header__quote__text {
             width: 100%;
             padding: 40px 0;
     }
 
-    .headerNav {
+    .header__nav {
         flex-direction: column;
         
     }
-    .headerWrap {
+    .header__wrap {
         flex-direction: column-reverse;
         padding: 0 20px;
-        .navSection {
+        .heaer__nav--section {
             width: 100%;
         }
     }
-    .headerSplash {
+    .header__splash {
         h1 {
             width: 100%;
             font-size: 4rem;
@@ -67,14 +67,16 @@
         h2 {
             width: 100%;
         }
-        .start1 {
+        .header__splash--start {
                 position: static;
                 display: none;
                 height: 0;
             }
     }
+
+
     /* Main */
-    .projectOne {
+    .project__airhead {
         flex-direction: column;
         padding: 40px 0;
         height: auto;
@@ -83,7 +85,7 @@
             width: 100%;
             padding: 20px 0;
         }
-        .projectSection {
+        .project__airhead--section {
             padding: 1px 40px;
             width: 100%;
             height: auto;
@@ -91,11 +93,11 @@
                 width: 100%;
             }
         }
-        .projSectTwo {
+        .project__airhead--sect-two {
                 flex-direction: column-reverse;
                 width: 100%;
         }
-        .content {
+        .project__airhead--content {
             flex-direction: column;
             height: auto;
             width: 100%;
@@ -104,29 +106,29 @@
 
     /* Project Two */
 
-    .projectTwo {
+    .project__whatdo {
         height: auto;
         width: 100%;
         h2 {
             padding: 10px;
             margin: 20px 40px;
         }
-        .content {
+        .project__whatdo--content {
             height: auto;
             padding: 20px;
             width: 100%;
         }
-        .partOneContent {
+        .project__whatdo--sect--one {
             flex-direction: column;
-            .description, .toolList {
+            .project__description, .project__tool__list {
                     padding: 10px 40px 10px 40px;
                     width: 100%;
             }
-            .contentBox {
+            .project__whatdo--sect--one--box {
                 padding: 40px 0;
                 flex-direction: column;
             }
-            .projectLink {
+            .project__link {
                 padding: 40px;
                 width: 100%;
                 height: auto;
@@ -136,28 +138,21 @@
                 }
             }
         }
-        .projectImg {
+        .project__whatdo--img {
             flex-direction: column;
             justify-content: space-around;
-            height: 50vh;
             width: 100%;
             padding: 40px;
-            margin
-            .img {
-                width: 100%;
-                height: auto;
-                position: relative;
+            width: 100%;
+            height: auto;
+            position: relative;
             }
-            .img1 {
+            .project__whatdo--img--one {
                 width: 100%;
             }
-            .img2 {
+            .project__whatdo--img--two {
                 width: 100%;
             }
-        }
-        .mainImg {
-            padding-top: 40px;
-        }
     }
     
 
@@ -172,7 +167,7 @@
         .content {
             height: auto;
         }
-        .toolList {
+        .project__tool__list {
             padding: 20px 0 1px 0;
         }
         .contentWrap {
@@ -183,7 +178,7 @@
             width: 100%;
             height: auto;
             padding: 20px;
-            .toolList {
+            .project__tool__list {
             padding: 40px 0 1px 0;
             }
             .description2 {

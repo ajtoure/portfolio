@@ -19,17 +19,18 @@
 <body>
     <!-- Header & Navigation -->
     <header id="header">
-        <div class="wrapper headerWrap">
-            <aside class="headerQuote">
-                <p class="headQuote">"There's a magic in using tech to hold a mirror up to our natural world"</p>
-                <!-- Logo or image goes here at bottom -->
-                <button class="startTrigger"><i class="fas fa-star-of-life"></i></button>
-                <a class="start2" href="#about"><img src="./assets/arrow-right-grey.svg"></a>
+        <div class="wrapper header__wrap">
+            <aside class="header__quote">
+                <p class="header__quote__text">"There's a magic in using tech to hold a mirror up to our natural world"</p>
+                <!-- Logo or image goes here at bottom - turns into arrow upon hover -->
+                <button class="header__start--mobile"><i class="fas fa-star-of-life"></i></button>
+                <a class="header__start--mobile--a" href="#about"><img src="./assets/arrow-right-grey.svg"></a>
             </aside>
 
-            <section class="navSection">
-                <nav class="headerNav">
-                    <ul class="navList">
+            <!-- Main Navigation -->
+            <section class="header__nav--section">
+                <nav class="header__nav">
+                    <ul class="header__nav__list">
                         <li>
                             <a href="#projects">Projects</a>
                         </li>
@@ -42,98 +43,96 @@
                     </ul>
                 </nav>
 
-
-                <div class="headerSplash">
+<!-- Splash Section of Header -->
+                <div class="header__splash">
                     <h1>aj.touré</h1>
                     <h2>developer & creative</h2>
-                    <a class="start1" href="#projectOne"><img src="./assets/arrow-right.svg" alt="go to projects"></a>
+                    <a class="header__start--splash" href="#projectOne"><img src="./assets/arrow-right.svg" alt="go to projects"></a>
                 </div>
             </section>
-
         </div>
-
     </header>
-    <!-- Main Section -->
+
+
+
+    <!-- Main Section with Projects -->
     <main class="projects" id="projects">
 
-        <section class="project projectOne" id="projectOne">
-            <div class=wrapper>
-                <div class="content">
-                    <div class="projectSection projSectOne">
+        <!--First Project - Airhead -->
+        <section class="project project__airhead" id="projectOne">
+            <div class="wrapper">
+                <div class="project__airhead--content">
+                    <div class="project__airhead--section project__airhead--sect--one">
                         <h2>airhead</h2>
-                        <!--Initial paragraph describing what the app does-->
-                        <p class="toolList">HTML5, CSS3, Javascript ES6, JSX, React, Firebase</p>
-                        <p class="description">For this project we made an app that assists the user with their
-                            meditation
-                            practice.
-                        </p>
-                        <div class="mainImg">
-                            <img src="./assets/airheadgif1.gif" alt="">
+                        <p class="project__tool__list">HTML5, CSS3, Javascript ES6, JSX, React, Firebase</p>
+                        <p class="project__description">For this project we made an app that assists the user with their meditation practice.</p>
+                        <div class="project__airhead__img--one">
+                            <img src="./assets/airheadgif1.gif" alt="view of image ">
                         </div>
                     </div>
 
-                    <div class="projectSection projSectTwo">
-                        <div class="secondImg">
+                    <div class="project__airhead--section project__airhead--sect--two">
+                        <div class="project__airhead__img--two">
                             <img src="./assets/airheadgif2.gif" alt="">
                         </div>
                         <!-- secondary paragraph explain how it was achieved -->
-                        <div class="sectionTwoText">
+                        <div class="project__airhead--sect--two--text">
                             <h3>how it works</h3>
-                            <p class="description">The user selects a time and an animation is generated, along with a
+                            <p class="project__description">The user selects a time and an animation is generated, along with a
                                 quote
                                 from our firebase database. The animation runs until the time runs out, at which point
                                 the app
                                 prompts the user to end their meditation or start again.
                             </p>
 
-                            <a class="projectLink" href="https://airhead-meditation.netlify.app/">Try meditating</a>
+                            <a class="project__link" href="https://airhead-meditation.netlify.app/">Try meditating</a>
                         </div>
 
                     </div>
                 </div>
 
             </div>
-            <div class="direct direct1">
+            <div class="project__directory project__directory--one">
                 <a href="#header"><img src="./assets/arrow-left-purple.svg" alt="back to home"></a>
                 <a href="#projectTwo"><img src="./assets/arrow-right-purple.svg" alt="to project two"></a>
             </div>
 
         </section>
 
-        <section class="project projectTwo" id="projectTwo">
-            <div class="wrapper content">
-                <div class="part part1">
+        <section class="project project__whatdo" id="projectTwo">
+
+            <div class="wrapper project__whatdo--content">
+                
+                <div class="project__whatdo--sect--one">
                     <h2>what do you know</h2>
-                    <div class="partOneContent">
-                        <p class="toolList">HTML, CSS, Javascript ES6, JSX, React, React Router, Ajax, Open API</p>
-                        <div class="contentBox">
-                            <p class="description">For this project we were assigned an application in a simulated
-                                agency setting. It presents
-                                the user with a definition and two homophones. The user selects the word th
-                                at corresponds
-                                with the definition.
-                            </p>
-                            <a class="projectLink" href="https://airhead-meditation.netlify.app/">
-                                <p>Can you beat the top score?</p>
-                            </a>
+                    <div class="project__whatdo--sect--one--box">
+                        <p class="project__tool__list">HTML, CSS, Javascript ES6, JSX, React, React Router, Ajax, Open API</p>
+                        <div class="project__whatdo__img project__whatdo__img--one">
+                            <img src="./assets/whatdoyounogif.gif" alt="">
                         </div>
                     </div>
                 </div>
 
                 <!-- secondary paragraph explain how it was achieved -->
-                <div class="projectImg part part2">
-                    <div class="img img1">
-                        <img src="./assets/whatdoyounogif.gif" alt="">
-                    </div>
-                    <div class="img img2">
+                <div class="project__whatdo--sect--two">
+                    <div class="project__whatdo__img project__whatdo__img--two">
                         <img src="./assets/whatdoyounogif2.gif" alt="">
                     </div>
-                </div>
-
-                <!--Initial paragraph describing what the app does-->
+                    <div class="project__whatdo--sect--two--box">
+                            <p class="project__description">For this project we were assigned an application in a simulated
+                                agency setting. It presents
+                                the user with a definition and two homophones. The user selects the word th
+                                at corresponds
+                                with the definition.
+                            </p>
+                            <a class="project__link" href="https://boring-jackson-ea7019.netlify.app/">
+                                <p>Can you beat the top score?</p>
+                            </a>
+                        </div>
+                    </div>
             </div>
 
-            <div class="direct direct2">
+            <div class="project__directory project__directory--two">
                 <a href="#projectOne"><img src="./assets/arrow-left-purple.svg" alt=""></a>
                 <a class="nextProject" href="#projectThree"><img src="./assets/arrow-right-purple.svg" alt=""></a>
             </div>
@@ -147,33 +146,33 @@
                         <div class="mainImg">
                             <img src="./assets/deliciouspsconversion.jpg" alt="">
                         </div>
-                        <p class="toolList">HTML5 & CSS3</p>
+                        <p class="project__tool__list">HTML5 & CSS3</p>
                     </div>
 
                     <div class="projectSection projSectThreeTwo">
                         <h3>what is it?</h3>
                         <!--Initial paragraph describing what the app does-->
-                        <p class="description">A multipage, responsive PSD conversion for a classically ethereal foodie
+                        <p class="project__description description">A multipage, responsive PSD conversion for a classically ethereal foodie
                             blog.
                         </p>
                         <!-- secondary paragraph explain how it was achieved -->
-                        <p class="description description2">Provided with nothing but the style sheet and jpg template -
+                        <p class="project__description description2">Provided with nothing but the style sheet and jpg template -
                             this site was developed from the ground up with a focus on accessibility, responsiveness,
                             and good, clean UI/UX design.</p>
-                        <a class="projectLink" href="https://jolly-panini-b0b454.netlify.app/">Hungry? Take a look and
+                        <a class="project__link" href="https://jolly-panini-b0b454.netlify.app/">Hungry? Take a look and
                             get hungrier.</a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="direct direct3">
+            <div class="project__directory project__directory--three">
                 <a href="#projectOne"><img src="./assets/arrow-left-grey.svg"></a>
                 <a class="toFinal" href="#about"><img src="./assets/arrow-right-grey.svg"></a>
             </div>
         </section>
     </main>
-    <!-- About -->
+    <!-- About Section -->
     <section class="aboutSection" id="about">
         <div class="wrapper aboutContent">
             <div class="portrait">
@@ -217,7 +216,7 @@
             <!-- Resume Link -->
         </div>
 
-        <!-- Contact -->
+        <!-- Contact Box-->
         <div class="wrapper contact">
             <!--<button class="openContact">
                 <i class="fas fa-chevron-right"></i>
@@ -252,7 +251,6 @@
 
                     <button class="contactSubmit" type="submit">send</button>
                 </form>
-
             </div>
 
 
