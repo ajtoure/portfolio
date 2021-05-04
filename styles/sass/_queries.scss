@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .project__airhead, .project__whatdo, .project__delicious {
-        min-width: 800px;
+        min-width:800px;
         height: auto;
     }
     section{
@@ -55,7 +55,14 @@
 }
 
 @media (max-width: 768px) {
-
+    header {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .project__airhead, .project__whatdo, .project__delicious {
+        min-width: 480px;
+        height: auto;
+    }
     /* General */
     section{
         height: auto;
@@ -178,13 +185,16 @@
         .project__whatdo--sect--one {
             flex-direction: column;
             width: 100%;
+            height: auto;
             .project__description, .project__tool__list {
                     padding: 10px 40px 10px 40px;
                     width: 100%;
             }
             .project__whatdo--sect--one--box {
-                padding: 40px 0;
+                padding: 0;
                 flex-direction: column;
+                justify-content: unset;
+                height: auto;
             }
             .project__link {
                 padding: 40px;
@@ -198,6 +208,7 @@
         }
         .project__whatdo--sect--two {
             width: 100%;
+            height: auto;
         }
         .project__whatdo--img {
             flex-direction: column;
@@ -283,22 +294,28 @@
         }
     }
     .contact {
-            position: static;
-            width: 90%;
-            padding: 10px 20px;
-            margin: 0 auto;
-            overflow: none;
-            div {
-                .h3, 
-            .social__icons {
-                padding: 0 40px;
-                .h4 {
-                    width: 100%;
-                    padding: 40px 60px;
-                }
+        position: static;
+        width: 90%;
+        padding: 10px 20px;
+        margin: 0 auto;
+        overflow: none;
+        height: auto;
+    
+        .h3, 
+        .contact__social__icons {
+            padding: 0 40px;
+            .h4 {
+                width: 100%;
+                padding: 40px 60px;
             }
         }
     }
+    form {
+        .message {
+            height: 80px;
+        }
+    }
+}
 
     .openContact {
         position: absolute;
@@ -310,7 +327,7 @@
     }
     /**/
 
-}
+
 
 @media (max-width: 480px) {
     .project__airhead, .project__whatdo, .project__delicious {
@@ -319,6 +336,10 @@
     }
     section{
         height: auto;
+    }
+    header {
+        height: auto;
+        padding-bottom: 40px;
     }
     .project__airhead--content,
     .project__airhead--section,
@@ -402,6 +423,9 @@
         }
         .project__delicious--sect--two {
             border: none;
+            .project__link {
+                padding: 40px 0;
+            }
         }
     }
     
@@ -410,5 +434,18 @@
             width: 50%;
         } 
         
+    }
+
+    .contact {
+        .contact__social__icons {
+            h3 {
+                font-size: 1.25rem;
+            }
+        }
+        form {
+            .message {
+                height: 80px;
+            }
+        }
     }
 }
