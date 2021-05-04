@@ -1,7 +1,63 @@
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+    .project__airhead, .project__whatdo, .project__delicious {
+        min-width: 800px;
+        height: auto;
+    }
+    section{
+        height: auto;
+    }
+    .project__airhead--content,
+    .project__airhead--section,
+    .project__airhead--sect--one, 
+    .project__airhead--sect--two,
+    .project__whatdo--content, 
+    .project__whatdo--sect--one, 
+    .project__whatdo--sect--two, 
+    .project__delicious--content,
+    .project__delicious--section {
+        height: auto;
+    }
+    .project__whatdo--sect--one{
+        .project__tool__list {
+            padding: 20px;
+            height: auto;
+        }
+    }
+    .project__whatdo--sect--two {
+        height: 80vh;
+    }
+    .about__section {
+        flex-direction: column;
+        height: auto;
+    }
+    .about__content {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact {
+        width: 80%;
+        margin: 0 auto;
+        position: static;
+        overflow: none;
+        .message {
+            height: 100px;
+        }
+    }
+    /*
+    .about__section__text {
+        padding-top: 0;
+    }
+    .about__section__text--box {
+        p {
+            font-size: .5rem;
+        }
+    }*/
+}
+
+@media (max-width: 768px) {
 
     /* General */
-    .section{
+    section{
         height: auto;
     }
     .project__tool__list {
@@ -54,7 +110,7 @@
     .header__wrap {
         flex-direction: column-reverse;
         padding: 0 20px;
-        .heaer__nav--section {
+        .header__nav--section {
             width: 100%;
         }
     }
@@ -93,7 +149,7 @@
                 width: 100%;
             }
         }
-        .project__airhead--sect-two {
+        .project__airhead--sect--two {
                 flex-direction: column-reverse;
                 width: 100%;
         }
@@ -115,11 +171,13 @@
         }
         .project__whatdo--content {
             height: auto;
-            padding: 20px;
+            padding: 40px;
             width: 100%;
+            flex-direction: column;
         }
         .project__whatdo--sect--one {
             flex-direction: column;
+            width: 100%;
             .project__description, .project__tool__list {
                     padding: 10px 40px 10px 40px;
                     width: 100%;
@@ -137,6 +195,9 @@
                     width: 100%;
                 }
             }
+        }
+        .project__whatdo--sect--two {
+            width: 100%;
         }
         .project__whatdo--img {
             flex-direction: column;
@@ -158,56 +219,54 @@
 
 
     /* Project Three*/
-    .projectThree {
+    .project__delicious {
         width: 100%;
         height: auto;
         h2 {
             padding: 20px;
         }
-        .content {
+        .project__delicious--content {
             height: auto;
         }
         .project__tool__list {
             padding: 20px 0 1px 0;
         }
-        .contentWrap {
-            flex-direction: column;
-            height: auto;
-        }
-        .projectSection {
+        .project__delicious--section {
             width: 100%;
             height: auto;
             padding: 20px;
             .project__tool__list {
             padding: 40px 0 1px 0;
             }
-            .description2 {
+            .project__description--two {
                 padding: 10px 0 40px 0;
             }
         }
-        .projectLink {
+        .project__link {
             padding: 80px 0 40px 0;
         }
     }
 
 
+    
+
     /* About */
-    .aboutSection {
+    .about__section {
         flex-direction: column;
         height: auto;
         margin: 1px;
     }
-    .aboutContent {
+    .about__content {
         flex-direction: column;
         height: auto;
         width: 100%;
-        .portrait {
-            width: 100%;
+        .about__portrait {
+            width: 30%;
             padding: 40px 20px;
-            margin: 0;
+            margin: 0 auto;
             float: none;
         }
-        .textWrap {
+        .about__section--text {
             width: 100%;
             h2 {
             width: 100%;
@@ -215,21 +274,23 @@
             margin: 20px auto;
             }
         }
-        .textWrapBox {
+        .about__section--text--box {
             width: 100%;
         }
-        .skillIcons {
+        .skill__icons {
             width: 100%;
             padding: 20px 0;
         }
     }
     .contact {
             position: static;
-            width: 100%;
-            padding: 10px 40px;
+            width: 90%;
+            padding: 10px 20px;
+            margin: 0 auto;
+            overflow: none;
             div {
                 .h3, 
-            .socialIcons {
+            .social__icons {
                 padding: 0 40px;
                 .h4 {
                     width: 100%;
@@ -248,4 +309,106 @@
         padding: 0;
     }
     /**/
+
+}
+
+@media (max-width: 480px) {
+    .project__airhead, .project__whatdo, .project__delicious {
+        min-width: 300px;
+        height: auto;
+    }
+    section{
+        height: auto;
+    }
+    .project__airhead--content,
+    .project__airhead--section,
+    .project__airhead--sect--one, 
+    .project__airhead--sect-two,
+    .project__whatdo--content, 
+    .project__whatdo--sect--one, 
+    .project__whatdo--sect--two, 
+    .project__delicious--content,
+    .project__delicious--section {
+        height: auto;
+    }
+    .header__quote {
+        width: 60%;
+    }
+    .project__airhead__img--one {
+        padding: 40px 0;
+    }
+    .project__airhead--content {
+        .project__airhead--sect--one {
+            .project__tool__list {
+                padding: 20px 0;
+            }
+            .project__airhead__img--one {
+                padding: 40px 0;
+            }
+        }
+        .project__airhead--sect--two {
+            padding: 20px 40px;
+            .project__airhead__img--two {
+                margin: 20px 0;
+            }
+            .project__airhead--sect--two--text {
+                height: auto;
+                .project__description {
+                    padding: 40px 0;
+                    margin: 1px;
+                }
+                .project__link {
+                    padding: 40px 0;
+                    margin: 1px;
+                }
+            }
+        }
+        
+    }
+    
+    .project__whatdo--sect--one {
+        h2 {
+            width: 100%;
+            padding: 20px 0;
+            margin: 0;
+        }
+        .project__whatdo--sect--one--box {
+            .project__tool__list {
+                padding: 20px 0;
+            }
+        }
+    }
+    .project__whatdo {
+        .project__whatdo--sect--two {
+            padding: 20px 0;
+            justify-content: unset;
+            .project__whatdo--sect--two--box {
+                padding: 20px 0;
+                height: auto;
+            }
+            .project__link {
+                padding: 0;
+                width: 100%;
+            }
+            .project__link p {
+                padding: 20px 0;
+            }
+        }
+    }
+    .project__delicious {
+        .project__tool__list {
+            font-size: 1.5rem;
+            border: none;
+        }
+        .project__delicious--sect--two {
+            border: none;
+        }
+    }
+    
+    .about__content {
+        .about__portrait{
+            width: 50%;
+        } 
+        
+    }
 }

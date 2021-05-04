@@ -236,6 +236,7 @@ html {
 }
 
 /* Fonts & Colours*/
+/*$yellow: #FBFC9C;*/
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -635,7 +636,7 @@ button:focus {
 
 /* Project #2 - Styles */
 .project__whatdo {
-  background-color: #FBFC9C;
+  background-color: #e7dd85;
   padding: 1px;
   height: 100vh;
   width: 100%;
@@ -705,6 +706,11 @@ button:focus {
   font-size: "EB Garamond", serif;
 }
 
+.project__whatdo .project__whatdo--sect--one .project__tool__list {
+  padding: 25% 40px 40px 40px;
+  width: 100%;
+}
+
 .project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,11 +731,6 @@ button:focus {
   width: 100%;
   padding: 20px;
   margin: 0;
-}
-
-.project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .project__tool__list {
-  padding: 50% 40px 40px 40px;
-  width: 100%;
 }
 
 .project__whatdo .project__whatdo--sect--one .project__whatdo--sect--one--box .project__whatdo__img--one {
@@ -836,6 +837,7 @@ button:focus {
 }
 
 .project__delicious h2 {
+  height: 10vh;
   width: 100%;
   padding: 40px;
   border-bottom: 1px solid #696880;
@@ -844,7 +846,7 @@ button:focus {
 .project__delicious .project__delicious--section {
   width: 50%;
   padding: 40px;
-  height: 90vh;
+  height: 80vh;
 }
 
 .project__delicious .project__delicious--section .project__delicious__img {
@@ -862,10 +864,23 @@ button:focus {
   padding: 20px 0;
 }
 
+.project__delicious .project__delicious--sect--one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .project__delicious .project__delicious--sect--two {
   padding: 30% 40px 40px 40px;
   border-left: 2px solid #696880;
-  height: 90vh;
+  height: 80vh;
 }
 
 .project__delicious .project__delicious--sect--two h3 {
@@ -911,27 +926,28 @@ footer p {
 }
 
 /*$green: #CCE8CC;*/
-.aboutSection {
+.about__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80vh;
+  padding: 1px;
 }
 
-.aboutContent {
+.about__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%;
   margin: 0;
-  padding: 40px;
+  padding: 40px 20px;
   height: auto;
   color: #724647;
   -ms-flex-negative: 2;
       flex-shrink: 2;
 }
 
-.aboutContent .portrait {
+.about__content .about__portrait {
   width: 25%;
   height: auto;
   float: left;
@@ -939,50 +955,50 @@ footer p {
   margin: 40px 40px 20px 20px;
 }
 
-.aboutContent .portrait img {
+.about__content .about__portrait img {
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
 }
 
-.aboutContent .textWrap {
+.about__content .about__section__text {
   padding: 20px;
   width: 100%;
 }
 
-.aboutContent .textWrap h2 {
+.about__content .about__section__text h2 {
   width: 100%;
   height: auto;
   padding: 20px 0;
   float: none;
-  font-size: 1.5em;
   margin: 20px 0;
   border-top: 1px solid #A37F89;
   border-bottom: 1px solid #A37F89;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.aboutContent .textWrap .textWrapBox {
+.about__content .about__section__text .about__section__text--box {
   padding: 20px 0;
   margin: 1px;
   height: auto;
 }
 
-.aboutContent .textWrap p {
+.about__content .about__section__text p {
   padding: 10px 0;
   width: 100%;
   float: none;
+  font-size: 1rem;
 }
 
-.aboutContent .textWrap a {
+.about__content .about__section__text a {
   text-decoration: none;
   color: #A37F89;
   font-family: "Cormorant Garamond", serif;
 }
 
-.aboutContent .skillIcons {
+.about__content .about__skill__icons {
   padding: 10px 10px 10px 0;
   margin: 0;
   display: block;
@@ -995,14 +1011,14 @@ footer p {
           justify-content: space-between;
 }
 
-.aboutContent .skillIcons i {
+.about__content .about__skill__icons i {
   font-size: 2rem;
   color: #724647;
   margin-right: 20px;
   padding: 10px 0;
 }
 
-.aboutContent .resumeDownload :hover {
+.about__content .about__resume__download :hover {
   text-decoration: underline;
 }
 
@@ -1051,18 +1067,18 @@ footer p {
 }
 
 .contact h4 {
-  padding: 20px;
+  padding: 20px 40px;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5em;
   margin: 0;
 }
 
-.contact .socialIcons {
+.contact .contact__social__icons {
   font-size: 20px;
-  padding: 20px 20px 20px 10px;
+  padding: 20px 40px;
 }
 
-.contact .socialIcons a {
+.contact .contact__social__icons a {
   text-decoration: none;
   color: #A37F89;
   padding-right: 20px;
@@ -1081,7 +1097,7 @@ footer p {
   padding: 20px;
 }
 
-.contact form input {
+.contact form input, .contact form .message {
   background-color: #CCE8CC;
   border-top: none;
   border-right: none;
@@ -1101,7 +1117,11 @@ footer p {
   width: 100%;
 }
 
-.contact form .contactSubmit {
+.contact form .message {
+  height: 200px;
+}
+
+.contact form .contact__submit {
   background: white;
   font-family: "Poppins", sans-serif;
   border: none;
@@ -1109,13 +1129,73 @@ footer p {
   padding: 20px;
 }
 
-.contact form .contactSubmit:hover {
-  background: #FBFC9C;
+.contact form .contact__submit:hover {
+  background: #e7dd85;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+  .project__airhead, .project__whatdo, .project__delicious {
+    min-width: 800px;
+    height: auto;
+  }
+  section {
+    height: auto;
+  }
+  .project__airhead--content,
+  .project__airhead--section,
+  .project__airhead--sect--one,
+  .project__airhead--sect--two,
+  .project__whatdo--content,
+  .project__whatdo--sect--one,
+  .project__whatdo--sect--two,
+  .project__delicious--content,
+  .project__delicious--section {
+    height: auto;
+  }
+  .project__whatdo--sect--one .project__tool__list {
+    padding: 20px;
+    height: auto;
+  }
+  .project__whatdo--sect--two {
+    height: 80vh;
+  }
+  .about__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+    position: static;
+    overflow: none;
+  }
+  .contact .message {
+    height: 100px;
+  }
+  /*
+    .about__section__text {
+        padding-top: 0;
+    }
+    .about__section__text--box {
+        p {
+            font-size: .5rem;
+        }
+    }*/
+}
+
+@media (max-width: 768px) {
   /* General */
-  .section {
+  section {
     height: auto;
   }
   .project__tool__list {
@@ -1167,7 +1247,7 @@ footer p {
             flex-direction: column-reverse;
     padding: 0 20px;
   }
-  .header__wrap .heaer__nav--section {
+  .header__wrap .header__nav--section {
     width: 100%;
   }
   .header__splash h1 {
@@ -1205,7 +1285,7 @@ footer p {
   .project__airhead .project__airhead--section .description {
     width: 100%;
   }
-  .project__airhead .project__airhead--sect-two {
+  .project__airhead .project__airhead--sect--two {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1231,14 +1311,19 @@ footer p {
   }
   .project__whatdo .project__whatdo--content {
     height: auto;
-    padding: 20px;
+    padding: 40px;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .project__whatdo .project__whatdo--sect--one {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   .project__whatdo .project__whatdo--sect--one .project__description, .project__whatdo .project__whatdo--sect--one .project__tool__list {
     padding: 10px 40px 10px 40px;
@@ -1258,6 +1343,9 @@ footer p {
     margin: 0 40px;
   }
   .project__whatdo .project__whatdo--sect--one .project__link p {
+    width: 100%;
+  }
+  .project__whatdo .project__whatdo--sect--two {
     width: 100%;
   }
   .project__whatdo .project__whatdo--img {
@@ -1280,42 +1368,35 @@ footer p {
     width: 100%;
   }
   /* Project Three*/
-  .projectThree {
+  .project__delicious {
     width: 100%;
     height: auto;
   }
-  .projectThree h2 {
+  .project__delicious h2 {
     padding: 20px;
   }
-  .projectThree .content {
+  .project__delicious .project__delicious--content {
     height: auto;
   }
-  .projectThree .project__tool__list {
+  .project__delicious .project__tool__list {
     padding: 20px 0 1px 0;
   }
-  .projectThree .contentWrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .projectThree .projectSection {
+  .project__delicious .project__delicious--section {
     width: 100%;
     height: auto;
     padding: 20px;
   }
-  .projectThree .projectSection .project__tool__list {
+  .project__delicious .project__delicious--section .project__tool__list {
     padding: 40px 0 1px 0;
   }
-  .projectThree .projectSection .description2 {
+  .project__delicious .project__delicious--section .project__description--two {
     padding: 10px 0 40px 0;
   }
-  .projectThree .projectLink {
+  .project__delicious .project__link {
     padding: 80px 0 40px 0;
   }
   /* About */
-  .aboutSection {
+  .about__section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1323,7 +1404,7 @@ footer p {
     height: auto;
     margin: 1px;
   }
-  .aboutContent {
+  .about__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1331,38 +1412,40 @@ footer p {
     height: auto;
     width: 100%;
   }
-  .aboutContent .portrait {
-    width: 100%;
+  .about__content .about__portrait {
+    width: 30%;
     padding: 40px 20px;
-    margin: 0;
+    margin: 0 auto;
     float: none;
   }
-  .aboutContent .textWrap {
+  .about__content .about__section--text {
     width: 100%;
   }
-  .aboutContent .textWrap h2 {
+  .about__content .about__section--text h2 {
     width: 100%;
     padding: 20px 0;
     margin: 20px auto;
   }
-  .aboutContent .textWrapBox {
+  .about__content .about__section--text--box {
     width: 100%;
   }
-  .aboutContent .skillIcons {
+  .about__content .skill__icons {
     width: 100%;
     padding: 20px 0;
   }
   .contact {
     position: static;
-    width: 100%;
-    padding: 10px 40px;
+    width: 90%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    overflow: none;
   }
   .contact div .h3,
-  .contact div .socialIcons {
+  .contact div .social__icons {
     padding: 0 40px;
   }
   .contact div .h3 .h4,
-  .contact div .socialIcons .h4 {
+  .contact div .social__icons .h4 {
     width: 100%;
     padding: 40px 60px;
   }
@@ -1375,4 +1458,89 @@ footer p {
     padding: 0;
   }
   /**/
+}
+
+@media (max-width: 480px) {
+  .project__airhead, .project__whatdo, .project__delicious {
+    min-width: 300px;
+    height: auto;
+  }
+  section {
+    height: auto;
+  }
+  .project__airhead--content,
+  .project__airhead--section,
+  .project__airhead--sect--one,
+  .project__airhead--sect-two,
+  .project__whatdo--content,
+  .project__whatdo--sect--one,
+  .project__whatdo--sect--two,
+  .project__delicious--content,
+  .project__delicious--section {
+    height: auto;
+  }
+  .header__quote {
+    width: 60%;
+  }
+  .project__airhead__img--one {
+    padding: 40px 0;
+  }
+  .project__airhead--content .project__airhead--sect--one .project__tool__list {
+    padding: 20px 0;
+  }
+  .project__airhead--content .project__airhead--sect--one .project__airhead__img--one {
+    padding: 40px 0;
+  }
+  .project__airhead--content .project__airhead--sect--two {
+    padding: 20px 40px;
+  }
+  .project__airhead--content .project__airhead--sect--two .project__airhead__img--two {
+    margin: 20px 0;
+  }
+  .project__airhead--content .project__airhead--sect--two .project__airhead--sect--two--text {
+    height: auto;
+  }
+  .project__airhead--content .project__airhead--sect--two .project__airhead--sect--two--text .project__description {
+    padding: 40px 0;
+    margin: 1px;
+  }
+  .project__airhead--content .project__airhead--sect--two .project__airhead--sect--two--text .project__link {
+    padding: 40px 0;
+    margin: 1px;
+  }
+  .project__whatdo--sect--one h2 {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+  .project__whatdo--sect--one .project__whatdo--sect--one--box .project__tool__list {
+    padding: 20px 0;
+  }
+  .project__whatdo .project__whatdo--sect--two {
+    padding: 20px 0;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .project__whatdo .project__whatdo--sect--two .project__whatdo--sect--two--box {
+    padding: 20px 0;
+    height: auto;
+  }
+  .project__whatdo .project__whatdo--sect--two .project__link {
+    padding: 0;
+    width: 100%;
+  }
+  .project__whatdo .project__whatdo--sect--two .project__link p {
+    padding: 20px 0;
+  }
+  .project__delicious .project__tool__list {
+    font-size: 1.5rem;
+    border: none;
+  }
+  .project__delicious .project__delicious--sect--two {
+    border: none;
+  }
+  .about__content .about__portrait {
+    width: 50%;
+  }
 }

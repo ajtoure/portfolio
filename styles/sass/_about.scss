@@ -1,19 +1,20 @@
 /*$green: #CCE8CC;*/
 
-.aboutSection {
+.about__section {
     display: flex;
     height: 80vh;
+    padding: 1px;
 }
 
-.aboutContent {
+.about__content {
     display: flex;
     width: 80%;
     margin: 0;
-    padding: 40px;
+    padding: 40px 20px;;
     height: auto;
     color: $darkRed;
     flex-shrink: 2;
-    .portrait {
+    .about__portrait {
         width: 25%;
         height: auto;
         float: left;
@@ -26,7 +27,7 @@
             padding: 0;
         }
     }
-    .textWrap {
+    .about__section__text {
         padding: 20px;
         width: 100%;
         h2 {
@@ -34,22 +35,22 @@
         height: auto;
         padding: 20px 0;
         float: none;
-        font-size: 1.5em;
         margin: 20px 0;
         border-top: 1px solid $darkPurple;
         border-bottom: 1px solid $darkPurple;
         font-family: $heavySerif;
-        font-size: 2rem;
+        font-size: 3rem;
         }
-        .textWrapBox {
+        .about__section__text--box {
             padding: 20px 0;
             margin: 1px;
             height: auto;
         }
         p {
-        padding: 10px 0;
-        width: 100%;
-        float: none;
+            padding: 10px 0;
+            width: 100%;
+            float: none;
+            font-size: 1rem;
         }
         a {
             text-decoration: none;
@@ -58,7 +59,7 @@
         }
         
     }
-    .skillIcons {
+    .about__skill__icons {
         padding: 10px 10px 10px 0;
         margin: 0;
         display: block;
@@ -72,7 +73,7 @@
             padding: 10px 0;
         }
     }
-    .resumeDownload {
+    .about__resume__download {
         :hover {
             text-decoration: underline;
         }
@@ -114,14 +115,14 @@
         font-size: 1.5em;
     }
     h4 {
-        padding: 20px;
+        padding: 20px 40px;
         font-family: $heavySerif;
         font-size: 1.5em;
         margin: 0;
     }
-    .socialIcons {
+    .contact__social__icons {
         font-size: 20px;
-        padding: 20px 20px 20px 10px;
+        padding: 20px 40px;
         a {
             text-decoration: none;
             color: $darkPurple;
@@ -135,7 +136,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 20px;
-        input {
+        input, .message {
         background-color: $green;
         border-top: none;
         border-right: none;
@@ -152,7 +153,10 @@
         .email, .message {
             width: 100%;
         }
-        .contactSubmit {
+        .message {
+            height: 200px;
+        }
+        .contact__submit {
             background: white;
             font-family: $sansSerif;
             border: none;
