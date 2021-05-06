@@ -4,6 +4,7 @@
     display: flex;
     height: 80vh;
     padding: 1px;
+    flex-shrink: 1;
 }
 
 .about__content {
@@ -30,20 +31,22 @@
     .about__section__text {
         padding: 20px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         h2 {
         width: 100%;
         height: auto;
         padding: 20px 0;
         float: none;
-        margin: 20px 0;
         border-top: 1px solid $darkPurple;
         border-bottom: 1px solid $darkPurple;
         font-family: $heavySerif;
         font-size: 3rem;
         }
         .about__section__text--box {
-            padding: 20px 0;
-            margin: 1px;
+            padding: 1px;
+            margin: 0;
             height: auto;
         }
         p {
@@ -146,6 +149,10 @@
         padding: 5px 10px;
         margin-right: 20px;
         margin-bottom: 40px;
+            &:hover,
+            &:focus {
+                background-color: $yellow;
+            }
         }
         .name, .subject {
             width: calc(50% - 20px);
@@ -154,7 +161,7 @@
             width: 100%;
         }
         .message {
-            height: 200px;
+            height: 100px;
         }
         .contact__submit {
             background: white;

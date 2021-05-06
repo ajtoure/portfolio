@@ -240,7 +240,7 @@ html {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
 
 body {
@@ -423,10 +423,17 @@ button:focus {
   padding: 1px;
 }
 
+.project__airhead,
+.project__whatdo,
+.project__delicious {
+  padding: 10px 0;
+  min-width: 1024px;
+}
+
 .project__directory {
   padding: 1px;
   width: 100%;
-  height: 100px;
+  height: 10vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,7 +643,7 @@ button:focus {
 
 /* Project #2 - Styles */
 .project__whatdo {
-  background-color: #e7dd85;
+  background-color: #F3EAAF;
   padding: 1px;
   height: 100vh;
   width: 100%;
@@ -769,7 +776,7 @@ button:focus {
           flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 .project__whatdo .project__whatdo--sect--two .project__link {
@@ -932,6 +939,8 @@ footer p {
   display: flex;
   height: 80vh;
   padding: 1px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .about__content {
@@ -965,6 +974,16 @@ footer p {
 .about__content .about__section__text {
   padding: 20px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .about__content .about__section__text h2 {
@@ -972,7 +991,6 @@ footer p {
   height: auto;
   padding: 20px 0;
   float: none;
-  margin: 20px 0;
   border-top: 1px solid #A37F89;
   border-bottom: 1px solid #A37F89;
   font-family: "Cormorant Garamond", serif;
@@ -980,8 +998,8 @@ footer p {
 }
 
 .about__content .about__section__text .about__section__text--box {
-  padding: 20px 0;
-  margin: 1px;
+  padding: 1px;
+  margin: 0;
   height: auto;
 }
 
@@ -1109,6 +1127,10 @@ footer p {
   margin-bottom: 40px;
 }
 
+.contact form input:hover, .contact form input:focus, .contact form .message:hover, .contact form .message:focus {
+  background-color: #F3EAAF;
+}
+
 .contact form .name, .contact form .subject {
   width: calc(50% - 20px);
 }
@@ -1118,7 +1140,7 @@ footer p {
 }
 
 .contact form .message {
-  height: 200px;
+  height: 100px;
 }
 
 .contact form .contact__submit {
@@ -1130,10 +1152,10 @@ footer p {
 }
 
 .contact form .contact__submit:hover {
-  background: #e7dd85;
+  background: #F3EAAF;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .project__airhead, .project__whatdo, .project__delicious {
     min-width: 800px;
     height: auto;
