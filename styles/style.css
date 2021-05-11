@@ -26,8 +26,8 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 0;
   overflow: visible;
 }
@@ -423,11 +423,14 @@ button:focus {
   padding: 1px;
 }
 
+header,
 .project__airhead,
+.project__delicious,
 .project__whatdo,
-.project__delicious {
-  padding: 10px 0;
-  min-width: 1024px;
+.about__section {
+  display: inline-block;
+  margin: 1px 0;
+  min-height: 667px;
 }
 
 .project__directory {
@@ -459,7 +462,7 @@ button:focus {
 
 .project__link {
   font-family: "Cormorant Garamond", serif;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 1.5rem;
   text-decoration: none;
   color: #A37F89;
@@ -490,7 +493,7 @@ button:focus {
 
 .project__whatdo--content h2,
 .project__airhead--content h2 {
-  padding: 40px 0;
+  padding: 10px 0;
   font-size: 2rem;
 }
 
@@ -498,9 +501,9 @@ button:focus {
   padding: 1px;
 }
 
-/* Project #1 - Styles */
+/* Project #1 - AIRHEAD APP - Styles */
 .project__airhead {
-  background-color: #DAC2C3;
+  background-color: #dbcdce;
   color: #724647;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,13 +511,28 @@ button:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100vh;
-  padding: 1px;
+  padding: 40px 0px;
+  /*.project__directory {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project__directory--one {
+        size: 1rem;
+        color: $darkRed;
+        padding: 5px;
+        a {
+            width: 10%;
+        }
+        svg.iconify{
+            height: 2em;
+            color: $darkPurple;
+        }
+    }*/
 }
 
 .project__airhead .project__airhead--section {
   width: 50%;
-  height: 90vh;
-  padding: 40px 60px;
+  height: auto;
 }
 
 .project__airhead .project__airhead--section h3 {
@@ -522,34 +540,26 @@ button:focus {
   border-bottom: 1px solid #A37F89;
 }
 
-.project__airhead .project__airhead--section .project__airhead__img--one,
-.project__airhead .project__airhead--section .project__airhead__img--two {
+.project__airhead .project__airhead--section .project_airhead_img--one,
+.project__airhead .project__airhead--section .project_airhead_img--two {
   width: 100%;
-  margin: 0 auto;
+  margin: 1px auto;
   height: auto;
   padding: 1px;
+  padding: 20px 0;
 }
 
-.project__airhead .project__airhead--section .project__airhead__img--one img,
-.project__airhead .project__airhead--section .project__airhead__img--two img {
-  display: inline-block;
+.project__airhead .project__airhead--section .project_airhead_img--one img,
+.project__airhead .project__airhead--section .project_airhead_img--two img {
+  display: block;
   margin: 0;
   padding: 0;
   width: 100%;
   border: 1px solid #696880;
 }
 
-.project__airhead .project__airhead--section .project__airhead__img--one {
-  margin-bottom: 0;
-  padding: 40px 40px 1px 1px;
-}
-
-.project__airhead .project__airhead--section .project__airhead__img--two {
-  margin-top: 60px;
-}
-
 .project__airhead .project__airhead--section .project__airhead--sect--two--text {
-  padding-top: 20px;
+  padding-top: 20px 0;
 }
 
 .project__airhead .project__airhead--section .project__link {
@@ -558,16 +568,11 @@ button:focus {
 
 .project__airhead .project__airhead--content {
   width: 100%;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 90vh;
-}
-
-.project__airhead .project__airhead--content .project__tool__list {
-  padding: 1px 0 50px 20px;
-  border-left: 1px solid #724647;
+  height: 100vh;
+  padding: 1px;
 }
 
 .project__airhead .project__airhead--content h2 {
@@ -575,10 +580,6 @@ button:focus {
   padding: 10px 0 10px 0;
   border-top: 1px solid #724647;
   border-bottom: 1px solid #724647;
-}
-
-.project__airhead .project__airhead--sect--two--text {
-  padding: 80px 0 40px 0;
 }
 
 .project__airhead .project__airhead--sect--one {
@@ -592,12 +593,17 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1px;
+  padding: 10px 20px;
+  height: auto;
 }
 
-.project__airhead .project__airhead--sect--one p.description {
+.project__airhead .project__airhead--sect--one .project__tool__list {
+  padding: 20px 0;
+}
+
+.project__airhead .project__airhead--sect--one .project__description {
   width: 100%;
-  padding: 20px 0 20px 20px;
+  padding: 20px 0;
 }
 
 .project__airhead .project__airhead--sect--two {
@@ -608,43 +614,22 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 60px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px 20px 20px 20px;
 }
 
 .project__airhead .project__airhead--sect--two .project__description {
   width: 100%;
   padding: 1px;
-  padding: 30px 0 20px 0;
-}
-
-.project__airhead .project__directory {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.project__airhead .project__directory--one {
-  size: 1rem;
-  color: #724647;
-  padding: 5px;
-}
-
-.project__airhead .project__directory--one a {
-  width: 10%;
-}
-
-.project__airhead .project__directory--one svg.iconify {
-  height: 2em;
-  color: #A37F89;
+  padding: 20px 0;
 }
 
 /* Project #2 - Styles */
 .project__whatdo {
   background-color: #F3EAAF;
-  padding: 1px;
+  padding: 40px 0;
   height: 100vh;
   width: 100%;
 }
@@ -822,7 +807,8 @@ button:focus {
 
 /* Project #3 - Styles */
 .project__delicious {
-  padding: 1px;
+  padding: 40px 0;
+  width: 100%;
   background-color: #D6E7F9;
   color: #696880;
   height: 100vh;

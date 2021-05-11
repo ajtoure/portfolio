@@ -2,6 +2,16 @@
     padding: 1px;
 }
 
+header,
+.project__airhead,
+.project__delicious,
+.project__whatdo,
+.about__section {
+    display: inline-block;
+    margin: 1px 0;
+    min-height: 667px;
+}
+
 .project__directory {
     padding: 1px;
     width: 100%;
@@ -58,7 +68,7 @@
     padding: 1px;
 }
 
-/* Project #1 - Styles */
+/* Project #1 - AIRHEAD APP - Styles */
 
 .project__airhead {
     background-color: $secondNeutral;
@@ -66,39 +76,31 @@
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    padding: 1px;
-    
+    padding: 40px 0px;
     .project__airhead--section {
         width: 50%;
-        height: 90vh;
-        padding: 40px 60px;
+        height: auto;
         h3 {
             padding: 20px 0;
             border-bottom: 1px solid $darkPurple;
         }
-        .project__airhead__img--one, 
-        .project__airhead__img--two {
+        .project_airhead_img--one, 
+        .project_airhead_img--two {
             width: 100%;
-            margin: 0 auto;
+            margin: 1px auto;
             height: auto;
             padding: 1px;
+            padding: 20px 0;
             img {
-                display: inline-block;
+                display: block;
                 margin: 0;
                 padding: 0;
                 width: 100%;
                 border: 1px solid $grey;
             }
         }
-        .project__airhead__img--one {
-            margin-bottom: 0;
-            padding: 40px 40px 1px 1px;
-        }
-        .project__airhead__img--two {
-            margin-top: 60px;
-        }
         .project__airhead--sect--two--text {
-            padding-top: 20px;
+            padding-top: 20px 0;
         }
         .project__link {
             padding: 20px 0;
@@ -106,13 +108,9 @@
     }
     .project__airhead--content {
         width: 100%;
-        margin: 0;
         display: flex;
-        height: 90vh;
-        .project__tool__list {
-            padding: 1px 0 50px 20px;
-            border-left: 1px solid $darkRed;
-        }
+        height: 100vh;
+        padding: 1px;
         h2 {
             width: 100%;
             padding: 10px 0 10px 0;
@@ -120,32 +118,32 @@
             border-bottom: 1px solid $darkRed;
         }
     }
-    .project__airhead--sect--two--text {
-        padding: 80px 0 40px 0;
-    }
-    
     .project__airhead--sect--one {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 1px;
-            p.description {
+            padding: 10px 20px;
+            height: auto;
+            .project__tool__list {
+                padding: 20px 0;
+            }
+            .project__description {
                 width: 100%;
-                padding: 20px 0 20px 20px;
+                padding: 20px 0;
             }
         }
     .project__airhead--sect--two {
             display: flex;
             flex-direction: column;
-            padding-top: 60px;
+            justify-content: space-evenly;
+            padding: 40px 20px 20px 20px;
             .project__description {
                 width: 100%;
                 padding: 1px;
-                padding: 30px 0 20px 0;
+                padding: 20px 0;
             }
         }
-
-    .project__directory {
+    /*.project__directory {
         display: flex;
         justify-content: space-between;
     }
@@ -160,14 +158,14 @@
             height: 2em;
             color: $darkPurple;
         }
-    }    
+    }*/    
 }
 
 /* Project #2 - Styles */
 
 .project__whatdo {
     background-color: $yellow;
-    padding: 1px;
+    padding: 40px 0;
     height: 100vh;
     width: 100%;
     h2 {
@@ -296,7 +294,8 @@
 /* Project #3 - Styles */
 
 .project__delicious {
-    padding: 1px;
+    padding: 40px 0;
+    width: 100%;
     background-color: $blue;
     color: $grey;
     height: 100vh;
