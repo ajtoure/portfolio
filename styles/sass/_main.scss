@@ -8,9 +8,10 @@ header,
 .project__whatdo,
 .about__section {
     display: block;
-    margin: 1px 0;
+    margin: 0;
+    height: 100vh;
     min-height: 667px;
-    max-height: 990px;
+    max-height: 100vh;
     overflow: none;
 }
 
@@ -54,14 +55,24 @@ header,
 
 .project__airhead {
     background-color: $secondNeutral;
+    width: 100%;
     color: $darkRed;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    padding: 40px 0px;
+    padding: 40px 0;
+    .project__airhead--content {
+        display: flex;
+        width: 100%;
+        height: 95vh;
+        h2 {
+            width: 100%;
+            padding: 10px 0 10px 0;
+            border-top: 1px solid $darkRed;
+            border-bottom: 1px solid $darkRed;
+        }
+    }
     .project__airhead--section {
-        width: 50%;
+        width: calc(50%-20px);
         height: 100%;
+        max-height: 90vh;
         h3 {
             padding: 20px 0;
             border-bottom: 1px solid $darkPurple;
@@ -69,9 +80,7 @@ header,
         .project__airhead__img--one, 
         .project__airhead__img--two {
             width: 100%;
-            margin: 1px auto;
             height: auto;
-            padding: 1px;
             padding: 20px 0;
             img {
                 display: block;
@@ -85,23 +94,14 @@ header,
             padding: 20px 0;
         }
     }
-    .project__airhead--content {
-        width: 100%;
-        display: flex;
-        height: 100%;
-        h2 {
-            width: 100%;
-            padding: 10px 0 10px 0;
-            border-top: 1px solid $darkRed;
-            border-bottom: 1px solid $darkRed;
-        }
-    }
+    
     .project__airhead--sect--one {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 10px 20px;
+            padding: 10px 40px 20px 0;
             height: 100%;
+            width: 50%;
             max-height: 90vh;
             .project__tool__list {
                 padding: 20px 0;
@@ -112,12 +112,12 @@ header,
             }
         }
     .project__airhead--sect--two {
+            width: 50%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 40px 20px 20px;
-            height: 100%;
-            max-height: 90vh;
+            padding: 40px 0 20px 40px;
             .project__description {
                 width: 100%;
                 padding: 1px;
@@ -134,29 +134,26 @@ header,
 
 .project__whatdo {
     background-color: $yellow;
-    padding: 40px 0;
-    height: 100vh;
     width: 100%;
-    h2 {
-        padding: 20px 40px;
-        border-top: 1px solid $darkPurple;
-        border-bottom: 1px solid $darkPurple;
-    }
+    color: $darkPurple;
+    padding: 40px 0;
     .project__whatdo--content {
-        padding: 40px 0;
-        height: 100%;
         display: flex;
         flex-wrap: wrap;
-        color: $darkPurple;
         width: 100%;
+        height: 95vh;
+        h2 {
+            padding: 20px 40px;
+            border-top: 1px solid $darkPurple;
+            border-bottom: 1px solid $darkPurple;
+        }
     }
     .project__whatdo--section {
-        width: calc(100% - 80px);
-        height: auto;
+        width: 100%;
+        height: 100%;
+        max-height: 90vh;
         display: flex;
         justify-content: space-between;
-        padding: 1px;
-        margin: 0 auto;
         .project__whatdo__img {
             width: 100%;
             padding: 1px;
@@ -176,8 +173,11 @@ header,
     .project__whatdo--sect--one {
         width: 50%;
         height: 100%;
+        max-height: 95vh;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding: 0 40px 0 0;
         p {
         padding: 1px;
         font-size: $lightSerif;
@@ -190,7 +190,7 @@ header,
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 100%;
+            height: auto;
             justify-content: space-between;
             .project__description {
                 width: 100%;
@@ -200,6 +200,7 @@ header,
             
             .project__whatdo__img--one {
                 width: 100%;
+                padding: 40px 0;
                 img {
                     width: 100%;
                     display: block;
@@ -211,15 +212,17 @@ header,
 
 
     .project__whatdo--sect--two {
-        padding: 80px 40px 0 40px;
+        padding: 80px 0 0 40px;
         width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
+        max-height: 95vh;
         .project__whatdo--sect--two--box {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             width: 100%;
             height: auto;
             padding: 40px 0 0 0;
@@ -234,6 +237,7 @@ header,
         }
         .project__whatdo__img--two {
             width: 100%;
+            padding: 40px 0;
             img {
                 display: block;
                 width: 100%;
@@ -241,23 +245,6 @@ header,
             }
         }
     }
-
-
-    .project__directory--two {
-        width: 100%;
-        margin: 0 auto;
-        height: 10vh;
-        &:last-child {
-            align-self: flex-end;
-        }
-        .nextProject {
-            display: flex;
-            img {
-                padding-left: 90%;
-            }
-        }
-    }
-      
 }
 
 /* Project #3 - Styles */
@@ -271,17 +258,18 @@ header,
     .project__delicious--content {
         display: flex;
         flex-wrap: wrap;
+        height: 95vh;
     }
     .project__tool__list {
-        padding: 200px 20px 20px 20px;
+        padding: 20px 0;
         font-size: 2rem;
         border-left: 1px solid $grey;
         border-bottom: 1px solid $grey;
     }
     h2 {
-        height: 10vh;
+        height: auto;
         width: 100%;
-        padding: 40px;
+        padding: 20px 0;
         border-bottom: 1px solid $grey;
     }
     .project__delicious--section {
