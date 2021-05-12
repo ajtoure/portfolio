@@ -230,7 +230,7 @@
                     <a href="https://github.com/ajtoure"><i class="fab fa-github-alt"></i></a>
                 </div>
                 <h4>Or, send me a message!</h4>
-                <form action="send" netlify name="contact">
+                <form action="send" netlify name="contact" data-netlify-honeypot="bot-field">
                     <label for="name" aria-hidden="true" class="sr-only">name</label>
                     <input class="name form-control" type="text" name="name" placeholder="Enter your name">
 
@@ -242,6 +242,8 @@
 
                     <label for="message" aria-hidden="true" class="sr-only">message</label>
                     <textarea class="message" type="textarea" placeholder="message"></textarea>
+
+                    <input class="hidden" name="bot-field" placeholder="ignore this if you are human" type="text">
 
                     <button class="contact__submit" type="submit">send</button>
                 </form>
