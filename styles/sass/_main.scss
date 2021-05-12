@@ -84,8 +84,8 @@ header,
             padding: 20px 0;
             border-bottom: 1px solid $darkPurple;
         }
-        .project_airhead_img--one, 
-        .project_airhead_img--two {
+        .project__airhead__img--one, 
+        .project__airhead__img--two {
             width: 100%;
             margin: 1px auto;
             height: auto;
@@ -109,7 +109,7 @@ header,
     .project__airhead--content {
         width: 100%;
         display: flex;
-        height: 100vh;
+        height: 100%;
         padding: 1px;
         h2 {
             width: 100%;
@@ -123,7 +123,8 @@ header,
             flex-direction: column;
             justify-content: space-between;
             padding: 10px 20px;
-            height: auto;
+            height: 100%;
+            max-height: fit-content;
             .project__tool__list {
                 padding: 20px 0;
             }
@@ -136,7 +137,8 @@ header,
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 40px 20px 20px 20px;
+            padding: 40px 20px 20px;
+            height: 100%;
             .project__description {
                 width: 100%;
                 padding: 1px;
@@ -174,7 +176,7 @@ header,
         border-bottom: 1px solid $darkPurple;
     }
     .project__whatdo--content {
-        height: 90vh;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         color: $darkPurple;
@@ -205,7 +207,7 @@ header,
 
     .project__whatdo--sect--one {
         width: 50%;
-        height: 90vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         p {
@@ -221,7 +223,7 @@ header,
             flex-direction: column;
             padding: 40px;
             width: 100%;
-            height: 90vh;
+            height: 100%;
             justify-content: space-between;
             .project__description {
                 width: 100%;
